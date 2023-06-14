@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">공지사항</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">공지사항</h2>
+
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <div class="form_item">
+                                <!-- <select name="" class="select" style="flex:none; width:30%;">
+                                    <option disabled="" selected="">전체</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select> -->
+                                <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');" style="flex:none; width:38%;">전체</button>
+                                <div class="input_box search">
+                                    <input type="text" class="input" placeholder="검색어를 입력해주세요" value="">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    <button type="button" class="search_btn"><span class="blind">검색</span></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="line_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con01">
+                                <span class="tit">[안내] eSIM 안내<span class="bag_clr_c06">중요</span></span>
+                                <span class="date">2022.02.02</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con01">
+                                <span class="tit">[안내] 우체국 알뜰폰 컨설팅존 위치 및 오픈시간</span>
+                                <span class="date">2022.08.10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con01">
+                                <span class="tit">[안내] 모두의 유심, 원칩_통신사별 개통 안내</span>
+                                <span class="date">2022.08.10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con01">
+                                <span class="tit">[안내] 알뜰폰 파트너스 참여사업자 기본 정보 
+                                    안내</span>
+                                <span class="date">2022.08.10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="list_con01">
+                                <span class="tit">[보도자료] U+알뜰폰 파트너스 1년간 신규 
+                                    가입자 43% ↑</span>
+                                <span class="date">2022.07.10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>검색 구분</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none" class="on">
+                    <button type="button" role="option" aria-selected="true" data-option="전체">전체</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="제목">제목</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="내용">내용</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        $(document).on('click', '#selectPop01 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+        });
+    });
+</script>
+
+</body>
+</html>

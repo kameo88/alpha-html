@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">eSIM 단말기 정보 입력</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">eSIM 단말기 정보 입력</h2>
+            
+            <div class="page_info">eSIM 단말기의 모델 정보 <br>(일련번호, 모델코드)를 <br>입력해 주세요</div>
+
+            <div class="section">
+                <div class="item_list02">
+                    <ul>
+                        <li>
+                            <div class="radio_ty03">
+                                <input type="radio" name="ty_list_01" id="ty_list_01_01">
+                                <label for="ty_list_01_01" class="img_os01">아이폰</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty03">
+                                <input type="radio" name="ty_list_01" id="ty_list_01_02">
+                                <label for="ty_list_01_02" class="img_os02">갤럭시</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                
+                <div id="tabpanel_ty_list_01_01" style="display:none;">
+                    <div class="form_list">
+                        <ul>
+                            <li>
+                                <strong class="form_tit">휴대폰 일련번호</strong>
+    
+                                <div class="form_item">
+                                    <div class="input_box">
+                                        <input type="text" class="input" placeholder="일련번호를 입력하세요 (숫자, 영문만 입력가능)">
+                                        <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    </div>
+                                </div>
+                                <div class="fali_m">아이폰 일련번호는 8자리 이상 입력해주세요.</div>
+                                <div class="fali_m">숫자/영문만 입력 가능합니다.</div>
+                            </li>
+                            <li class="mgt20">
+                                <div class="group_btn">
+                                    <button type="button" class="btn_sM_c03">일련번호 조회하기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acd_st acdItem">
+                                    <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">일련번호 확인 방법</a>
+                                    <div class="acd_panel" role="region">
+                                        <ul class="text_list_bull">
+                                            <li>휴대폰 설정 > 일반 > 정보 > 일련번호 확인</li>
+                                        </ul>
+                                        <div class="guid_img">
+                                            <img src="../../resource/images/content/img_s_num_03.png" alt="일련번호 예시 G6CJE02EMD84">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="tit02">휴대폰 모델명으로 확인해주세요</h3>
+                            </li>
+                            <li>
+                                <!-- 일련번호 없을 경우 생성되는 영역 -->
+                                <strong class="form_tit">모델명을 선택 해 주세요</strong>
+                                <div class="form_item">
+                                        <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01');">선택하세요</button>
+                                </div>
+                                <div class="fali_m">모델명을 선택해 주세요</div>
+
+                                <button type="button" class="text_btn">휴대폰 정보 확인 방법</button>
+                            </li>
+                            <li>
+                                <h3 class="tit02">⁠모델코드</h3> <!-- 일련번호 있을 경우 생성되는 제목 -->
+                                <strong class="form_tit">이용할 휴대폰과 일치하는 모델코드를 선택하세요</strong> <!-- 셀렉트 박스로 모델명 선택 시 생성되는 제목 -->
+                                <div class="table_ty02 tb_center nrw_st_ty02"> <!-- 일련번호 조회 또는 모델명 셀렉트 선택 시 노출 -->
+                                    <table>
+                                        <caption>모델정보</caption>
+                                        <colgroup>
+                                            <col style="width:4.5rem">
+                                            <col style="width:auto">
+                                            <col style="width:auto">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선택</th>
+                                                <th scope="col">모델명</th>
+                                                <th scope="col">모델코드</th>
+                                                <th scope="col">용량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio01_00" name="radio01">
+                                                        <label for="radio01_00"></label>
+                                                    </div>
+                                                </td>
+                                                <td>iPhone13 Pro</td>
+                                                <td>A2538</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio01_02" name="radio01">
+                                                        <label for="radio01_02"></label>
+                                                    </div>
+                                                </td>
+                                                <td>iPhone13 Pro</td>
+                                                <td>A2538</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio01_03" name="radio01">
+                                                        <label for="radio01_03"></label>
+                                                    </div>
+                                                </td>
+                                                <td>iPhone13 Pro</td>
+                                                <td>A2538</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio01_04" name="radio01">
+                                                        <label for="radio01_04"></label>
+                                                    </div>
+                                                </td>
+                                                <td>iPhone13 Pro</td>
+                                                <td>A2538</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tabpanel_ty_list_01_02" style="display:none;">
+                    <div class="form_list">
+                        <ul>
+                            <li>
+                                <strong class="form_tit">휴대폰 일련번호</strong>
+    
+                                <div class="form_item">
+                                    <div class="input_box">
+                                        <input type="number" class="input" placeholder="일련번호를 입력하세요 (숫자만 입력가능)">
+                                        <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    </div>
+                                </div>
+                                <div class="fali_m">갤럭시 일련번호는 6자리 이상 입력해주세요.</div>
+                                <div class="fali_m">숫자만 입력 가능합니다.</div>
+                            </li>
+                            <li class="mgt20">
+                                <div class="group_btn">
+                                    <button type="button" class="btn_sM_c03">일련번호 조회하기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="acd_st acdItem">
+                                    <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">일련번호 확인 방법</a>
+                                    <div class="acd_panel" role="region">
+                                        <ul class="text_list_bull">
+                                            <li>설정 > 휴대전화 정보 > 규제 정보 > 일련번호 확인</li>
+                                        </ul>
+                                        <div class="guid_img">
+                                            <img src="../../resource/images/content/img_s_num_04.png" alt="일련번호 예시 4865914">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="tit02">휴대폰 모델명으로 확인해주세요</h3>
+                            </li>
+                            <li>
+                                <!-- 일련번호 없을 경우 생성되는 영역 -->
+                                <strong class="form_tit">모델명을 선택 해 주세요</strong>
+                                <div class="form_item">
+                                        <button type="button" class="select_btn" id="btn_selectPop03" onclick="popUp.open('#selectPop03');">선택하세요</button>
+                                </div>
+                                <div class="fali_m">모델명을 선택해 주세요</div>
+
+                                <button type="button" class="text_btn" onclick="popUp.open('#selectPop04');">휴대폰 정보 확인 방법</button>
+                                <!-- // 일련번호 없을 경우 생성되는 영역 -->
+                            </li>
+                            <li>
+                                <h3 class="tit02">⁠모델코드</h3> <!-- 일련번호 있을 경우 생성되는 제목 -->
+                                <strong class="form_tit">이용할 휴대폰과 일치하는 모델코드를 선택하세요</strong> <!-- 셀렉트 박스로 모델명 선택 시 생성되는 제목 -->
+                                <div class="table_ty02 tb_center nrw_st_ty02"> <!-- 일련번호 조회 또는 모델명 셀렉트 선택 시 노출 -->
+                                    <table>
+                                        <caption>모델정보</caption>
+                                        <colgroup>
+                                            <col style="width:4.5rem">
+                                            <col style="width:auto">
+                                            <col style="width:auto">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">선택</th>
+                                                <th scope="col">모델명</th>
+                                                <th scope="col">모델코드</th>
+                                                <th scope="col">용량</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio02_00" name="radio02">
+                                                        <label for="radio02_00"></label>
+                                                    </div>
+                                                </td>
+                                                <td>갤럭시 S23 Ultra</td>
+                                                <td>SM-S918N</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio02_02" name="radio02">
+                                                        <label for="radio02_02"></label>
+                                                    </div>
+                                                </td>
+                                                <td>갤럭시 S23 Ultra</td>
+                                                <td>SM-S918N</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio02_03" name="radio02">
+                                                        <label for="radio02_03"></label>
+                                                    </div>
+                                                </td>
+                                                <td>갤럭시 S23 Ultra</td>
+                                                <td>SM-S918N</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="radio_st">
+                                                        <input type="radio" id="radio02_04" name="radio02">
+                                                        <label for="radio02_04"></label>
+                                                    </div>
+                                                </td>
+                                                <td>갤럭시 S23 Ultra</td>
+                                                <td>SM-S918N</td>
+                                                <td>128GB</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 아이폰 모델명 선택 -->
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>휴대폰 모델명 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone11">iPhone11</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone11 Pro">iPhone11 Pro</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone11 Pro Max">iPhone11 Pro Max</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone12">iPhone12</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone12 mini">iPhone12 mini</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone12 Pro">iPhone12 Pro</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone12 Pro Max">iPhone12 Pro Max</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone13">iPhone13</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone13 mini">iPhone13 mini</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone13 Pro">iPhone13 Pro</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone13 Pro Max">iPhone13 Pro Max</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="iPhone14">iPhone14</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<!-- 갤럭시 모델명 선택 -->
+<div class="pop_layer normal" id="selectPop03">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>휴대폰 모델명 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="갤럭시 Z Fold 4">갤럭시 Z Fold 4</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="갤럭시 Z Flip 4">갤럭시 Z Flip 4</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="갤럭시 S23">갤럭시 S23</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="갤럭시 S23+">갤럭시 S23+</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="갤럭시 S23 Ultra">갤럭시 S23 Ultra</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        $(document).on('change', 'input[name=ty_list_01]', function(){
+            //라디오 버튼 탭 기능
+            if($(this).is(':checked') == true) {
+                var $thisId = $(this).attr("id");
+
+                $("[id^=tabpanel_]").hide();
+                $("#tabpanel_" + $thisId).show();
+            }
+        });
+
+        // sample (아이폰)
+        $(document).on('click', '#selectPop01 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+        });
+
+        // sample (갤럭시)
+        $(document).on('click', '#selectPop03 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop03').text(option);
+            popUp.close('#selectPop03', '#btn_selectPop03');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">1:1 문의 내역</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">1:1 문의 내역</h2>
+
+            <div class="section">
+                <!-- 1:1 문의 내역 -->
+                <div class="box_yellow">
+                    <div class="my_box">
+                        <p>
+                            궁금하신 사항은 <span>1:1 문의하기</span>를 통해 <br>
+                            확인해 보세요
+                        </p>
+                        <a href="javascript:void(0);" role="button" class="btn_sS_c01">1:1 문의하기</a>
+                    </div>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="line_list">
+                    <ul>
+                        <li>
+                            <div class="acdItem">
+                                <a href="javascript:void(0);" class="qna_tit ty02" role="button" aria-expanded="false">
+                                    <span>납기일은 어떻게 되나요?</span>
+                                    <div class="qna_ty">
+                                        <div class="bag_clr_c02">접수완료</div>
+                                        <span>2022.08.03</span>
+                                        <span>가입/변경/해지</span>
+                                    </div>
+                                </a>
+                                <div class="qna_con ty02">
+                                    <div role="region">
+                                        <div class="box_gray">
+                                            <strong>Q</strong>
+                                            <span>혜택으로 받은 포인트는 기간이 정해져있나요?</span>
+                                            <strong>A</strong>
+                                            <span>안녕하세요 홍길동 고객님 홈페이지 문의 건 증가로 순차적으로 답변을 하다보니답변이 지연된 점 너그러운 마음으로 양해 부탁드립니다. 고객님께서 “요금제 혜택‘ 관련하여 문의를 하셨는데요. 문의 해주신 요금제와 관련하여 제공되는 혜택은 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="acdItem">
+                                <a href="javascript:void(0);" class="qna_tit ty02" role="button" aria-expanded="false">
+                                    <span>혜택에 대해서 알고싶어요.</span>
+                                    <div class="qna_ty">
+                                        <div class="bag_clr_c01">답변완료</div>
+                                        <span>2022.08.03</span>
+                                        <span>요금제</span>
+                                    </div>
+                                </a>
+                                <div class="qna_con ty02">
+                                    <div role="region">
+                                        <div class="box_gray">
+                                            <strong>Q</strong>
+                                            <span>혜택으로 받은 포인트는 기간이 정해져있나요?</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="group_btn">
+                        <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+                    </div>
+                </div>
+                <div class="no_dt_his">
+                    <p>
+                        문의하신 내역이 없습니다
+                    </p>
+                </div>
+            </div><!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    // sample
+
+    //찜하기, 비교하기
+    $(document).on('click', '.paln_badge > button', function(){
+        $(this).toggleClass("on");
+    });
+    
+    var swiper = new Swiper(".cardSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        observer: true,
+        observeParents: true,
+    });
+</script>
+
+</body>
+</html>

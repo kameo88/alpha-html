@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">header</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+                <button type="button" class="h_close"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">Guide</h2>
+
+            <div class="page_info">Popup</div>
+            
+            <div class="section">
+                <h3 class="tit02">Popup Alert</h3>
+
+                <div class="group_btn">
+                    <button type="button" class="btn_sL_c01" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">Alert</button>
+                </div>
+
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">Popup Normal</h3>
+
+                <div class="group_btn">
+                    <button type="button" class="btn_sL_c02" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">Normal</button>
+                </div>
+
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">Popup Full</h3>
+
+                <div class="group_btn">
+                    <button type="button" class="btn_sL_c03" id="btn_popup03" onclick="popUp.open('#popup03', '#btn_popup03');">Full</button>
+                </div>
+
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">Popup notice</h3>
+
+                <div class="group_btn">
+                    <button type="button" class="btn_sL_c04" id="btn_noticePop" onclick="popUp.open('#noticePop', '#btn_noticePop');">notice</button>
+                </div>
+
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">tooltip</h3>
+
+                데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+                <span class="tooltip">
+                    <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
+                    <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                </span>
+
+                <br><br><br><br>
+
+                데이터 소진 시 유튜브 화질 1080p로
+                <span class="tooltip">
+                    <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
+                    <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                </span>
+                원활히 볼 수 있어요
+
+                <br><br><br><br>
+
+                
+                <span class="tooltip">
+                    <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
+                    <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                </span>
+                데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요
+
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer alert" id="popup01"> <!-- alert, normal, full -->
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                지금 팝업을 닫으시면, <br>꼭 맞는 요금제 찾기가 중단되요. <br>정말 닫으시겠어요?
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c07" data-action="close">취소</button>
+                <button type="button" class="btn_sS_c02" onclick="popUp.close('#popup01', ''); popUp.close('#popup03', '#btn_popup01');">확인</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer normal" id="popup02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content
+
+            <br><br>
+            데이터 소진 시 유튜브 화질 1080p로
+            <span class="tooltip">
+                <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
+                <span class="info" role="region">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+            </span>
+            원활히 볼 수 있어요
+
+            <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03">확인</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer full" id="popup03">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                
+                <div class="group_btn">
+                    <button type="button" class="btn_sL_c01" id="btn_popup04" onclick="popUp.open('#popup01', '#btn_popup04');">팝업 and 팝업</button>
+                </div>
+
+            </div> <!-- // section -->
+            <div class="section">
+                section <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content
+
+                <br><br>
+                데이터 소진 시 유튜브 화질 1080p로
+                <span class="tooltip">
+                    <button type="button" aria-expanded="false"><span class="blind">툴팁</span></button>
+                    <span class="info" role="tooltip">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                </span>
+                원활히 볼 수 있어요
+    
+                <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content <br>content
+            </div> <!-- // section -->
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sL_c03">확인</button>
+            </div>
+            <div class="group_btn">
+                <button type="button" class="btn_sL_c03">확인</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer notice" id="noticePop">
+    <div class="pop_wrap">
+        <div class="pop_content">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);">
+                            <img src="../../resource/images/data/img_notice.jpg" alt="개통 시 Npay 5천원 선착순 증정 리뷰이벤트 2023.02.02 - 2023.03.28">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);">
+                            <img src="../../resource/images/data/img_notice.jpg" alt="개통 시 Npay 5천원 선착순 증정 리뷰이벤트 2023.02.02 - 2023.03.28">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);">
+                            <img src="../../resource/images/data/img_notice.jpg" alt="개통 시 Npay 5천원 선착순 증정 리뷰이벤트 2023.02.02 - 2023.03.28">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="pop_footer">
+            <button type="button" onclick="popUp.close('#noticePop', '');">오늘은 더 안볼래요</button>
+            <button type="button" class="close" data-action="close">닫기</button>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    //sample
+
+    $(function(){
+
+        if($('#noticePop').find('.swiper-slide').length > 1) {
+            var swiper = new Swiper("#noticePop .swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                observer: true,
+                observeParents: true,
+            });
+        }
+
+    });
+</script>
+
+</body>
+</html>

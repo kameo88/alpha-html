@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">header</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+                <button type="button" class="h_close"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">Guide</h2>
+            
+            <div class="page_info">swiper</div>
+            
+            <div class="section">
+                <h3 class="tit02">card Swiper</h3>
+
+                <div class="swiper cardSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            item01<br>item01<br>item01
+                        </div>
+                        <div class="swiper-slide">
+                            item01
+                        </div>
+                        <div class="swiper-slide">
+                            item01<br>item01
+                        </div>
+                        <div class="swiper-slide">
+                            item01<br>item01<br>item01
+                        </div>
+                        <div class="swiper-slide">
+                            item01
+                        </div>
+                        <div class="swiper-slide">
+                            item01<br>item01
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var swiper = new Swiper(".cardSwiper", {
+                        slidesPerView: "auto",
+                        spaceBetween: 12,
+                        observer: true,
+                        observeParents: true,
+                    });
+                </script>
+                
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">flow Swiper</h3>
+
+                <div class="swiper flowSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner01.png" alt="A모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner02.png" alt="FLASH모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner03.png" alt="KG모빌리언스"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner04.png" alt="U+유모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner05.png" alt="WELL"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner06.png" alt="freeT"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner07.png" alt="mobing"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner08.png" alt="리브모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner09.png" alt="마블프로듀스"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner10.png" alt="벨류컴"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner11.png" alt="슈가모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner12.png" alt="스노우맨"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner13.png" alt="스마텔"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner14.png" alt="아이즈모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner15.png" alt="앤텔레콤"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner16.png" alt="에스원안심모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner17.png" alt="여유텔레콤"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner18.png" alt="이야기모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner19.png" alt="이지모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner20.png" alt="인스모바일"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner21.png" alt="티플러스"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);"><img src="../../resource/images/data/logo_partner22.png" alt="헬로모바일"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    var swiper = new Swiper(".flowSwiper", {
+                        slidesPerView: "auto",
+                        centeredSlides: true,
+                        spaceBetween: 32,
+                        loop: true,
+                        autoplay: {
+                            delay: 0,
+                        },
+                        speed: 5000,
+                        observer: true,
+                        observeParents: true,
+                    });
+                </script>
+                
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <h3 class="tit02">banner Swiper</h3>
+
+                <div class="swiper bnrSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../../resource/images/data/img_bnr01.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_hide">
+                                <img src="../../resource/images/data/img_bnr01_pc.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_show">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../../resource/images/data/img_bnr01.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_hide">
+                                <img src="../../resource/images/data/img_bnr01_pc.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_show">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <img src="../../resource/images/data/img_bnr01.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_hide">
+                                <img src="../../resource/images/data/img_bnr01_pc.jpg" alt="혜택을 가지고 다시 돌아왔어요! 데이터 프리덤 300GB" class="pc_show">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <script>
+                    var swiper = new Swiper(".bnrSwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 17,
+                        loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                        observer: true,
+                        observeParents: true,
+                    });
+                </script>
+                
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+</body>
+</html>

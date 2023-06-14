@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">약관 동의</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">약관 동의</h2>
+            
+            <div class="page_info">알뜰폰 신청을 위해 <br>약관에 동의해 주세요</div>
+
+            <div class="section">
+                <div class="terms_consent">
+                    <div class="cst_box check_st">
+                        <input type="checkbox" id="check_all01" name="all">
+                        <label for="check_all01"><b>전체 약관에 모두 동의합니다.</b></label>
+                    </div>
+
+                    <div class="cst_list acdItem_wrap tog">
+                        <div class="cst_acd acdItem">
+                            <div class="cst_tab">
+                                <div class="check_st">
+                                    <input type="checkbox" id="check_consent01_all" name="">
+                                    <label for="check_consent01_all"><b>+알파 동의항목</b></label>
+                                </div>
+                                <button type="button" aria-expanded="false"><span class="blind">약관 보기</span></button>
+                            </div>
+                            <div class="cst_panel" role="region">
+                                <ul>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent01_01" name="">
+                                            <label for="check_consent01_01">개인정보 수집·이용동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent01_02" name="">
+                                            <label for="check_consent01_02">개인정보 제3자 제공 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent01_03" name="">
+                                            <label for="check_consent01_03">고유식별정보 처리 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cst_acd acdItem">
+                            <div class="cst_tab">
+                                <div class="check_st">
+                                    <input type="checkbox" id="check_consent02_all" name="">
+                                    <label for="check_consent02_all"><b>통신사 동의 항목</b></label>
+                                </div>
+                                <button type="button" aria-expanded="false"><span class="blind">약관 보기</span></button>
+                            </div>
+                            <div class="cst_panel" role="region">
+                                <ul>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent02_01" name="">
+                                            <label for="check_consent02_01">통신 이용 약관 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent02_02" name="">
+                                            <label for="check_consent02_02">개인 수집 이용 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent02_03" name="">
+                                            <label for="check_consent02_03">서비스 제공을 위한 개인정보 제공 이전 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent02_04" name="">
+                                            <label for="check_consent02_04">개인정보 취급 위탁 동의·신용정보 조회에 관한 동의·본인인증 서비스 이용에 대한 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                    <li>
+                                        <div class="check_st ty02">
+                                            <input type="checkbox" id="check_consent02_05" name="">
+                                            <label for="check_consent02_05">서비스 계약의 인수관련 동의 (필수)</label>
+                                        </div>
+                                        <button type="button"><span class="blind">약관 보기</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- // terms_consent -->
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    // sample
+
+    $(function(){
+        $(document).on('change', '#check_all01', function(){
+            if($(this).is(':checked') == true) {
+                $(this).closest('.terms_consent').find('.cst_list input[type=checkbox]').prop('checked' , true);
+            } else {
+                $(this).closest('.terms_consent').find('.cst_list input[type=checkbox]').prop('checked' , false);
+            }
+        });
+
+        $(document).on('change', '.cst_tab input[type=checkbox]', function(){
+            if($(this).is(':checked') == true) {
+                $(this).closest('.cst_acd').find('.cst_panel input[type=checkbox]').prop('checked' , true);
+            } else {
+                $(this).closest('.cst_acd').find('.cst_panel input[type=checkbox]').prop('checked' , false);
+            }
+        });
+
+        $(document).on('change', '.cst_panel input[type=checkbox]', function(){
+            var allL = $(this).closest('.cst_panel').find('input[type=checkbox]').length;
+            var cheL = $(this).closest('.cst_panel').find('input[type=checkbox]:checked').length;
+
+            if(allL == cheL) {
+                $(this).closest('.cst_acd').find('.cst_tab input[type=checkbox]').prop('checked' , true);
+            } else {
+                $(this).closest('.cst_acd').find('.cst_tab input[type=checkbox]').prop('checked' , false);
+            }
+        });
+
+        $(document).on('change', '.cst_list input[type=checkbox]', function(){
+            var allL = $(this).closest('.cst_list').find('input[type=checkbox]').length;
+            var cheL = $(this).closest('.cst_list').find('input[type=checkbox]:checked').length;
+
+            if(allL == cheL) {
+                $('#check_all01').prop('checked' , true);
+            } else {
+                $('#check_all01').prop('checked' , false);
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

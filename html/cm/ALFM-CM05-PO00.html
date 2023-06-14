@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">⁠우편번호 검색</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">⁠우편번호 검색</h2>
+
+            <div class="section">
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01');">⁠우편번호 검색</button>
+            </div>
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap height_fix">
+        <div class="pop_header">
+            <h3>⁠우편번호 검색</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <div class="input_box search">
+                                <input type="text" class="input" placeholder="⁠도로명+건물번호 / 지역명(동/리)+번지">
+                                <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                <button type="button" class="search_btn"><span class="blind">검색</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="addr_search_info"> <!-- 우편번호 검색 시 미노출 -->
+                                <span class="info_desc">⁠아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</span>
+                                <ul>
+                                    <li>
+                                        <span class="tit">⁠도로명 주소 검색</span>
+                                        <span class="fc03">예) 한강대로 32</span>
+                                    </li>
+                                    <li>
+                                        <span class="tit">⁠도로명+건물번호 검색</span>
+                                        <span class="fc03">예) 한강대로 32</span>
+                                    </li>
+                                    <li>
+                                        <span class="tit">⁠건물명 검색</span>
+                                        <span class="fc03">예) 엘지유플러스</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sort_wrap">
+                                <div>총 1342건 검색되었습니다</div>
+                            </div>
+
+                            <div class="line_list">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con02">
+                                            <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                                            <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con02">
+                                            <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                                            <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con02">
+                                            <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                                            <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con02">
+                                            <div class="addr_list"><span class="bag_clr_c09">도로명</span>⁠경기도 성남시 분당구 판교역로 164</div>
+                                            <div class="addr_list"><span class="bag_clr_c07">지번</span>⁠경기도 성남시 분당구 삼평동 640</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <button type="button"  role="button" class="btn_sM_c05">더볼래요</button>
+                                </div>
+
+                                <div class="form_item mgt20"><!-- 주소 선택 시 노출 -->
+                                    <div class="input_box">
+                                        <input type="text" class="input" placeholder="⁠상세주소 입력">
+                                        <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="no_dt_sch">
+                    <p>
+                        검색 결과가 없습니다.<br>
+                        ⁠정확한 주소인지 다시 한번 확인해주세요.
+                    </p>
+                </div>
+            </div> <!-- // section -->
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03" id="nextBtn">확인</button>
+            </div>
+        </div>
+        
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.close('#popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+$(function(){
+    popUp.open('#popup01');
+});
+</script>
+
+</body>
+</html>

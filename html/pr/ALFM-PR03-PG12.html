@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">고객정보 입력</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">고객정보 입력</h2>
+            
+            <div class="page_info">가입하려는 분의 <br>주소를 입력해 주세요</div> <!-- Default 노출 -->
+            <div class="page_info">유심을 배송 받을 수 있는 <br>주소를 입력해 주세요</div> <!-- USIM이 없어요 Case 선택 시 노출 -->
+
+            <div class="section">
+
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">주소</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="우편번호" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <button type="button" class="btn_sM_c03">우편번호 찾기</button>
+                            </div>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="주소" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="상세주소 입력" value="LG유플러스 상암사옥">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">배송 시 요청사항</strong>
+                            <div class="form_item">
+                                <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">배송 시 요청사항을 선택해 주세요.</button>
+                            </div>
+
+                            <div class="form_item" id="directInput" style="display:none;">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="40글자 이내로 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">요청사항을 입력해 주세요</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 배송 시 요청사항 선택 -->
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>배송 시 요청사항 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="배송 전에 미리 연락 바랍니다.">배송 전에 미리 연락 바랍니다.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="부재시 경비실에 맡겨 주세요.">부재시 경비실에 맡겨 주세요.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="부재시 전화 주시거나 문자 남겨 주세요.">부재시 전화 주시거나 문자 남겨 주세요.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="true" data-option="직접입력">직접입력</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        $(document).on('click', '#selectPop01 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+
+            if(option !== "직접입력"){
+                $('#directInput').hide();
+                
+            } else {
+                $('#directInput').show();
+                $('#directInput input').focus();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

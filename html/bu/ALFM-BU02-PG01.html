@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">배송/픽업정보</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">배송/픽업정보</h2>
+
+            <div class="page_info">픽업정보를 <br>입력해주세요</div>
+
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">수령인</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="수령인 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">수령인을 입력해주세요</div>
+                            <div class="fali_m">수령인을 정확히 입력해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">휴대폰 번호</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="tel" class="input" placeholder="'-'없이 숫자만 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <button type="button" class="btn_sM_c03">인증번호 받기</button>
+                            </div>
+                            <div class="fali_m">휴대폰 번호가 올바르지 않습니다</div>
+
+                            <div class="form_item">
+                                <div class="input_box auth_num">
+                                    <input type="number" class="input" placeholder="인증번호">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    <div class="timer">
+                                        <span>0:01</span>
+                                        <button type="button">시간연장하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fali_m">인증번호를 정확히 입력해주세요</div>
+
+                            <div class="text_info">휴대폰으로 전송된 인증번호를 3분안에 입력해 주세요.</div> <!-- 기본 문구 -->
+                            <!-- <div class="text_info">인증번호 유효시간이 지났습니다. 인증번호를 다시 받아주세요.</div> --> <!-- 인증번호 입력시간 초과시 문구 -->
+                        </li>
+                        <li>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sM_c03">인증 확인</button>
+                            </div>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sM_c03" disabled>인증 완료</button> <!-- 인증 완료 시 노출-->
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">픽업 가능한 편의점 조회</strong>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sM_c04">GS25 편의점 조회</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_gray">
+                                <ul class="text_list_bull">
+                                    <li>유심 픽업 가능한 GS25 편의점 조회하여 수신 받을 쿠폰으로 가까운 매장을 방문해주세요.</li>
+                                    <li>매장 방문 전 반드시 매장에 바로픽업이 가능한지 전화로 확인 하시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+            
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+</body>
+</html>

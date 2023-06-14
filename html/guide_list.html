@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../resource/images/apple-touch-icon.png">
+    <title>공통, etc | +알파</title>
+    <link rel="stylesheet" href="./pb_list.css">
+    <script src="../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="./pb_list.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+		<div class="cont_area">
+			<h1><a href="../index.html"><img src="../resource/images/layout/logo_plusalpha.png" alt="+알파"></a> : </h1>
+			<p class="info"><span>2023.00.00</span> Last updata</p>
+			<div class="proc_wrap"></div>
+			<ul class="tab_nav">
+				<li class="on"><a href="./guide_list.html">Guide</a></li>
+				<li><a href="./cm_list.html">공통, etc</a></li>
+				<li><a href="./ma_list.html">메인</a></li>
+				<li><a href="./bu_list.html">유심구매</a></li>
+				<li><a href="./pr_list.html">요금제</a></li>
+				<li><a href="./be_list.html">혜택</a></li>
+				<li><a href="./cs_list.html">고객지원</a></li>
+				<li><a href="./my_list.html">마이페이지</a></li>
+				<li><a href="./lg_list.html">로그인</a></li>
+				<li><a href="./ft_list.html">푸터</a></li>
+			</ul>
+			<div class="marker">
+				<ul>
+					<li class="com">컨펌 진행중</li>
+					<li class="end">퍼블완료</li>
+					<li class="mod">수정</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- <div class="total">
+		<strong><sup>+</sup>알파 홈페이지 개편 프로젝트</strong>
+		<ul>
+			<li>총 페이지 수 : <span id="p_all">119</span></li>
+			<li>완료된 페이지 수 : <span id="p_end">87</span></li>
+			<li>진행율 : <span id="p_per"></span></li>
+		</ul>
+	</div>
+	<style>
+		.total {padding:20px; margin:20px 0; border-radius:12px; background:#f8f8f8;}
+		.total strong {display:block; font-size:18px; font-weight:700;}
+		.total ul {margin-top:10px;}
+		.total ul li {position:relative; padding-left:10px; font-size:16px; color:#717171;}
+		.total ul li::before {content:''; position:absolute; left:0; top:10px; width:5px; height:5px; border-radius:50%; background-color:#000;}
+		.total ul li ~ li {margin-top:5px;}
+		.total ul span {font-weight:700; color:#fc6969;}
+	</style>
+	<script>
+		$(function(){
+			var _all = parseInt($('#p_all').text());
+			var _end = parseInt($('#p_end').text());
+			var _per = (_end * 100) / parseInt(_all);
+			
+			$('#p_per').text(Math.round(_per) + '%');
+		});
+	</script> -->
+
+    <h2>Guide : v0.0</h2>
+	<div class="cont">
+		<table>
+			<caption></caption>
+			<colgroup>
+				<col span="1">
+				<col span="1">
+				<col span="1">
+				<col span="1">
+				<col span="1">
+				<col span="1">
+				<col span="1">
+				<col span="1">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1 Depth</th>
+					<th scope="col">2 Depth</th>
+					<th scope="col">3 Depth</th>
+					<th scope="col">4 Depth</th>
+					<th scope="col">URL</th>
+					<th scope="col">상태</th>
+					<th scope="col">Date</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="com">
+					<td>list guide</td>
+					<td>컨펌 진행중</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						tr class="com" : 컨펌 진행 및 수정
+					</td>
+				</tr>
+				<tr class="end">
+					<td></td>
+					<td>퍼블완료</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						tr class="end"
+					</td>
+				</tr>
+				<tr class="mod">
+					<td></td>
+					<td>수정</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						tr class="mod" : 퍼블리싱 완료 후 수정
+					</td>
+				</tr>
+				<tr class="hid">
+					<td></td>
+					<td>제외</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						tr class="hid"
+					</td>
+				</tr>
+				<tr class="ing">
+					<td>layout</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/layout.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						layout, loading, skip menu, header, aside menu, container, footer, floating area <br>
+						PC header
+					</td>
+				</tr>
+				<!-- <tr class="">
+					<td></td>
+					<td>loading</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr> -->
+				<tr class="ing">
+					<td></td>
+					<td>popup</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/popup.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>& tooltip</td>
+				</tr>
+				<tr class="ing">
+					<td>component</td>
+					<td>text</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/text.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>form</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/form.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>tab</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/tab.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>filter & tag</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/tag.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>accordion</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/accordion.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>button & more</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/button.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>table</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/table.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>flag</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/flag.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>list</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/list.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td>
+						sort, item, list, pagination
+					</td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>swiper</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/swiper.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr class="ing">
+					<td></td>
+					<td>logo</td>
+					<td></td>
+					<td></td>
+					<td class="url"><a href="./guide/logo.html" target="_blank"></a></td>
+					<td class="marker"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div> <!-- // wrap -->
+</body>
+</html>

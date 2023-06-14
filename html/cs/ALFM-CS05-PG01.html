@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">1:1 문의하기</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">1:1 문의하기</h2>
+            
+            
+            <div class="section">
+                <div class="box_gray">
+                    <ul class="text_list_bull">
+                        <li>
+                            문의가 많은 경우 일시적으로 답변이 지연될 수 있습니다. 
+                            (답변 가능시간 : 평일 오전 9시 ~ 오후 6시)
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section ty02">
+                <div class="page_info">
+                    문의 내용을 작성해 주세요
+                </div>
+
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">문의유형</strong>
+                            <div class="form_item">
+                                    <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">문의 유형 선택</button>
+                            </div>
+                            <div class="fali_m">문의유형을 선택해 주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">제목</strong>
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="제목을 입력해주세요">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">제목을 입력해 주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">내용</strong>
+                            <div class="form_item">
+                                <div class="textarea_box">
+                                    <textarea class="textarea" placeholder="문의 내용을 입력해 주세요"></textarea>
+                                    <div class="byte_check">
+                                        <span class="count">0</span><span class="total">1,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fali_m">내용을 입력해 주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">이메일</strong>
+                            <div class="form_item"><!-- class="form_item val_chk" -->
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="아이디">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <span class="mark_div">@</span>
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="도메인" id="domain">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">이메일 형식을 확인해주세요</div>
+
+                            <div class="form_item">
+                                <button type="button" class="select_btn" id="btn_selectPop02" onclick="popUp.open('#selectPop02', '#btn_selectPop02');">직접입력</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box_gray">
+                                <ul class="text_list_bull">
+                                    <li>
+                                        입력하신 이메일 주소로 문의에 대한 답변을 보내 드리고 
+                                        있으니, 정확히 입력해 주세요.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sL_c01" disabled>문의 등록하기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+                
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 문의유형 선택 -->
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>문의유형 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none" class="on">
+                    <button type="button" role="option" aria-selected="true" data-option="가입/변경/해지">가입/변경/해지</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="유심">유심</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="요금제">요금제</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="혜택/이벤트">혜택/이벤트</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="고객지원">고객지원</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<!-- 이메일 선택 -->
+<div class="pop_layer normal" id="selectPop02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>도메인 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none" class="on">
+                    <button type="button" role="option" aria-selected="true" data-option="직접입력">직접입력</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="naver.com">naver.com</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="daum.net">daum.net</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="hanmail.net">hanmail.net</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="nate.com">nate.com</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="gmail.com">gmail.com</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="dreamwiz.com">dreamwiz.com</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="lycos.co.kr">lycos.co.kr</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="chol.com">chol.com</button>
+                </li>
+            </ul>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03">확인</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        $(document).on('click', '#selectPop01 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+        });
+
+        $(document).on('click', '#selectPop02 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop02').text(option);
+            popUp.close('#selectPop02', '#btn_selectPop02');
+
+            if(option !== "직접입력"){
+                $('#domain').val(option).attr('disabled', true);
+            } else {
+                $('#domain').val('').removeAttr('disabled').focus();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

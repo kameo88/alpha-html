@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">회원가입 메인</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">회원가입 메인 > 정보입력</h2>
+            
+            <div class="section">
+                <h3 class="tit02">중복된 이메일이 없을 경우</h3>
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">Alert</button>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="tit02">중복된 이메일이 있을 경우</h3>
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c03" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">Alert</button>
+                </div>
+            </div>
+                
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 중복된 이메일이 없을 경우 -->
+<div class="pop_layer alert" id="popup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                이용 가능한 메일 주소입니다! <br>
+                가입을 계속 진행해주세요.
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">확인</button> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<!-- 중복된 이메일이 있을 경우 -->
+<div class="pop_layer alert" id="popup02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                입력하신 이메일 주소는 <br>
+                이미 사용중이거나 탈퇴한 계정입니다. <br>
+                다른 이메일 주소를 입력해 주세요.
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">확인</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">요금제 상세</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">요금제 상세</h2>
+
+            <div class="section">
+                <h3 class="tit02">요금제 상세</h3>
+
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">내게 맞는 요금제 찾기 Step03</button>
+            </div>
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap  height_fix">
+        <div class="pop_header">
+            <h3>내게 맞는 요금제 찾기</h3>
+        </div>
+        <div class="pop_content">
+            <div class="page_info">
+                한달에 <span class="fc01">통화</span>는 <br>
+                얼마나 하시나요?
+            </div>
+
+            <div class="section">
+                <div class="item_list radio_active"> <!-- radio_active : 라디오 리스트 활성화 제어 -->
+                    <ul>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="step03_01" name="step03">
+                                <label for="step03_01">3시간 이상 해요</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="step03_02" name="step03">
+                                <label for="step03_02">1-2시간 정도 해요</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="step03_03" name="step03">
+                                <label for="step03_03">30분을 넘지 않아요</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="step03_04" name="step03">
+                                <label for="step03_04">전화는 거의 하지 않아요</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sL_c01" id="nextBtn" disabled>다음으로</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.open('#alert01', '#btn_popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer alert" id="alert01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                지금 팝업을 닫으시면, <br>꼭 맞는 요금제 찾기가 중단되요. <br>정말 닫으시겠어요?
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c07" data-action="close">계속할래요</button>
+                <button type="button" class="btn_sS_c02" onclick="popUp.close('#alert01', ''); popUp.close('#popup01', '#btn_popup01');">닫을래요</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+$(function(){
+    popUp.open('#popup01', '#btn_popup01');
+
+    $(document).on('change', 'input[name=step03]', function(){
+        if($(this).is(':checked') == true) {
+            $('#nextBtn').removeAttr('disabled');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">이미지 업로드 가이드</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">이미지 업로드 가이드</h2>
+
+            <div class="section">
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01');">이미지 업로드 가이드</button>
+            </div>
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap height_fix">
+        <div class="pop_header">
+            <h3>이미지 업로드 가이드</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                <div class="box_gray">
+                    <div class="guid_img_item">
+                        <strong class="fs12 fc01">step 01</strong>
+                        <h3 class="tit02">통화창에 *#06# 입력</h3>
+                        <div class="guid_img">
+                            <img src="../../resource/images/content/img_s_num_01.png" alt="통화창 예시">
+                        </div>
+                    </div>
+
+                    <div class="next_arrow_bott">
+                        <img src="../../resource/images/ico/ico_arrowB03.png" alt="">
+                    </div>
+
+                    <div class="guid_img_item">
+                        <strong class="fs12 fc01">step 02</strong>
+                        <h3 class="tit02">이미지 캡처본 업로드</h3>
+                        <div class="guid_img">
+                            <img src="../../resource/images/content/img_s_num_02.png" alt="이미지 캡쳐 예시">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <div class="box_gray">
+                    <ul class="text_list_bull">
+                        <li>eSIM 개통을 위해서는 가지고 계신 단말기의 EID 및 IMEI 정보 입력이 필요합니다.</li>
+                        <li>이미지 업로드 시 각 항목이 자동으로 입력됩니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.close('#popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+$(function(){
+    popUp.open('#popup01');
+
+    $(document).on('change', 'input[name=step01]', function(){
+        if($(this).is(':checked') == true) {
+            $('#nextBtn').removeAttr('disabled');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

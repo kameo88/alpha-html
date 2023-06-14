@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">본인인증</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">본인인증</h2>
+            
+            <div class="page_info">본인인증을 위해 <br>가입자 정보를 입력해주세요</div>
+
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">이름</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="이름 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">이름을 입력해주세요</div>
+                            <div class="fali_m">이름을 정확히 입력해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">주민등록번호</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="앞 6자리 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <span class="mark_div">-</span>
+                                <div class="input_box">
+                                    <input type="password" class="input" placeholder="뒤 7자리 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">주민등록번호를 입력해주세요</div>
+                            <div class="fali_m">주민등록번호를 정확히 입력해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">인증방법</strong>
+
+                            <div class="cir_icon_radio">
+                                <ul>
+                                    <li>
+                                        <div class="naver_icon_link">
+                                            <input type="radio" id="radio01_01" name="radio01" checked>
+                                            <label for="radio01_01"><span>네이버</span></label>
+                                        </div>
+                                    <li>
+                                        <div class="pass_icon_link">
+                                            <input type="radio" id="radio01_02" name="radio01">
+                                            <label for="radio01_02"><span>PASS</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="credit_icon_link">
+                                            <input type="radio" id="radio01_03" name="radio01">
+                                            <label for="radio01_03"><span>신용카드</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="acd_st acdItem" id="tabpanel_radio01_01">
+                                <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn"><strong>이용안내</strong></a>
+                                <div class="acd_panel" role="region">
+                                    <ul class="text_list_bull">
+                                        <li>
+                                            아이폰 사용 고객은 인증 전 ‘팝업 차단’ 기능을 해제해 
+                                            주세요.
+                                            - 팝업차단 해제 방법 : [설정] → [Safari] → ‘팝업차단’ 옆의
+                                            스위치 버튼 눌러 끄기
+                                        </li>
+                                        <li>
+                                            최신 버전의 네이버 앱을 설치하고 가입자 본인 아이디로 
+                                            로그인 한 다음 인증해 주세요.
+                                        </li>
+                                        <li>
+                                            네이버 앱 또는 휴대폰 설정 화면에서 앱 푸시 메시지를 받을 
+                                            수 있도록 미리 설정해야 합니다.
+                                        </li>
+                                        <li>
+                                            앱을 재설치하거나 휴대전화를 바꾼 경우 인증서를 재발급 
+                                            받아야 합니다.
+                                        </li>
+                                        <li>
+                                            인증이 정상적으로 진행되지 않는다면 인증서를 다시 발급 
+                                            받은 후 이용해 주세요.<br>
+                                            <a href="javascript:void(0);" role="button" class="btn_sXS_c07 mgt8">네이버 인증서 바로가기</a>
+                                        </li>
+                                        <li>
+                                            네이버 인증서에 대한 궁금한점은 공지사항에서 확인할 수 
+                                            있습니다.<br>
+                                            <a href="javascript:void(0);" role="button" class="btn_sXS_c07 mgt8">공지사항 확인하기</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="acd_st acdItem" id="tabpanel_radio01_02" style="display:none;">
+                                <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn"><strong>이용안내</strong></a>
+                                <div class="acd_panel" role="region">
+                                    <ul class="text_list_bull">
+                                        <li>
+                                            휴대폰에 PASS앱을 설치하고 가입한 뒤 지문 또는 비밀번호를 등록하면 간편하게 본인인증 할 수 있습니다.
+                                        </li>
+                                        <li>
+                                            PASS 앱 설정 또는 휴대폰 설정화면에서 앱 푸시 메시지를 받을 수 있도록 미리 설정해야합니다.
+                                        </li>
+                                        <li>
+                                            앱을 재설치하거나 휴대폰을 바꾼 경우 인증서를 재발급 받아야 합니다.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="acd_st acdItem" id="tabpanel_radio01_03" style="display:none;">
+                                <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn"><strong>이용안내</strong></a>
+                                <div class="acd_panel" role="region">
+                                    <ul class="text_list_bull">
+                                        <li>
+                                            아이폰 사용 고객은 인증 전 ‘팝업 차단’ 기능을 해제해 
+                                            주세요.
+                                            - 팝업차단 해제 방법 : [설정] → [Safari] → ‘팝업차단’ 옆의
+                                            스위치 버튼 눌러 끄기
+                                        </li>
+                                        <li>
+                                            본인인증 시 별도의 비용이 발생하지 않습니다.
+                                        </li>
+                                        <li>
+                                            체크카드로는 본인인증을 할 수 없습니다.
+                                        </li>
+                                        <li>
+                                            다른 사람의 개인정보를 도용하는 경우 3년 이하의 징역 또는 천만 원 이하의 벌금에 처합니다.
+                                        </li>
+                                        <li>
+                                            개인정보는 안전하게 암호화됩니다.
+                                        </li>
+                                        <li>
+                                            만 19세 미만은 신용카드로 인증할 수 없으니, 다른 인증방법을 선택해 주세요.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>인증하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    // sample
+
+    $(function(){
+        // 인증방법 라디오 탭
+        $(document).on('change', 'input[name=radio01]', function(){
+            if($(this).is(':checked') == true) {
+                var $thisId = $(this).attr("id");
+                $('[id^="tabpanel_"]').hide();
+                $("#tabpanel_" + $thisId).show();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

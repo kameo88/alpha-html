@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">배송 방법 선택</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">배송 방법 선택</h2>
+
+            <div class="page_info">⁠편의점을 <br>선택해주세요</div>
+
+            <div class="section">
+                <div class="item_list radio_active">
+                    <ul>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="ty_list_01_01" name="ty_list_01">
+
+                                <label for="ty_list_01_01">
+                                    <img src="../../resource/images/component/img_gs25.png" alt="">
+                                    GS25 바로픽업
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="ty_list_01_02" name="ty_list_01">
+                                <label for="ty_list_01_02">
+                                    <img src="../../resource/images/component/img_seven_eleven.png" alt="">
+                                    세븐일레븐 바로픽업
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="ty_list_01_03" name="ty_list_01">
+                                <label for="ty_list_01_03">
+                                    <img src="../../resource/images/component/img_emart.png" alt="">
+                                    이마트24 바로픽업
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty01">
+                                <input type="radio" id="ty_list_01_04" name="ty_list_01">
+                                <label for="ty_list_01_04">
+                                    <img src="../../resource/images/component/img_cu.png" alt="">
+                                    CU 바로픽업
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+            
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    //sample
+
+    $(function(){
+        $(document).on('change', 'input[name=ty_list_01]', function(){
+            if($(this).is(':checked') == true) {
+                $('.bottom_float .btn_sL_c01').removeAttr('disabled');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

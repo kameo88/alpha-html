@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">배송정보</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">배송정보</h2>
+            
+            <div class="page_info">배송정보를 <br>입력해주세요</div>
+
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">수령인</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="수령인 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">수령인을 입력해주세요</div>
+                            <div class="fali_m">수령인을 정확히 입력해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">통신사</strong>
+
+                            <div class="form_item item_list03">
+                                <ul>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_01" name="ty_list_01">
+                                            <label for="ty_list_01_01">LG U+</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_02" name="ty_list_01">
+                                            <label for="ty_list_01_02">SKT</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_03" name="ty_list_01">
+                                            <label for="ty_list_01_03">KT</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_04" name="ty_list_01">
+                                            <label for="ty_list_01_04">LG U+ 알뜰폰</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_05" name="ty_list_01">
+                                            <label for="ty_list_01_05">SKT 알뜰폰</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_06" name="ty_list_01">
+                                            <label for="ty_list_01_06">KT 알뜰폰</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio_ty00">
+                                            <input type="radio" id="ty_list_01_07" name="ty_list_01">
+                                            <label for="ty_list_01_07">없음</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fali_m">...</div>
+                        </li>
+                        <li id="alddl" style="display:none;"> <!-- 알뜰폰 통신사 선택 시 노출 -->
+                            <strong class="form_tit">알뜰폰 통신사</strong>
+                            <div class="form_item">
+                                <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">휴대폰 번호</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="tel" class="input" placeholder="'-'없이 숫자만 입력">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <button type="button" class="btn_sM_c03">인증번호 받기</button>
+                            </div>
+                            <div class="fali_m">휴대폰 번호가 올바르지 않습니다</div>
+
+                            <div class="form_item">
+                                <div class="input_box auth_num">
+                                    <input type="number" class="input" placeholder="인증번호">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                    <div class="timer">
+                                        <span>0:01</span>
+                                        <button type="button">시간연장하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fali_m">인증번호를 정확히 입력해주세요</div>
+
+                            <div class="text_info">휴대폰으로 전송된 인증번호를 3분안에 입력해 주세요.</div> <!-- 기본 문구 -->
+                            <!-- <div class="text_info">인증번호 유효시간이 지났습니다. 인증번호를 다시 받아주세요.</div> --> <!-- 인증번호 입력시간 초과시 문구 -->
+                        </li>
+                        <li>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sM_c03">인증 확인</button>
+                            </div>
+                            <div class="group_btn">
+                                <button type="button" class="btn_sM_c03" disabled>인증 완료</button> <!-- 인증 완료 시 노출-->
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">주소</strong>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="우편번호" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                                <button type="button" class="btn_sM_c03">우편번호 찾기</button>
+                            </div>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="주소" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">인증번호를 정확히 입력해주세요</div>
+
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="text" class="input" placeholder="상세주소 입력" value="LG유플러스 상암사옥">
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">인증번호를 정확히 입력해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">배송 시 요청사항</strong>
+                            <div class="form_item">
+                                <button type="button" class="select_btn" id="btn_selectPop02" onclick="popUp.open('#selectPop02', '#btn_selectPop02');">배송 시 요청사항을 선택해 주세요.</button>
+                            </div>
+                            <div class="form_item" id="directInput" style="display:none;">
+                                <div class="textarea_box ty02">
+                                    <textarea class="textarea" placeholder="40글자 이내로 입력" rows="1" maxlength="50" style="height: 4.8rem;"></textarea>
+                                    <div class="byte_check">
+                                        <span class="count">0</span><span class="total">50</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fali_m">요청사항을 입력해 주세요</div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>다음으로</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 알뜰폰 통신사 선택 -->
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>알뜰폰 통신사 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list02" role="listbox">
+                <li role="none" class="on">
+                    <button type="button" role="option" aria-selected="true" data-option="전체">
+                        <span class="img">
+                            전체
+                        </span>
+                        <span class="tex"></span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="A모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner01.png" alt="">
+                        </span>
+                        <span class="tex">A모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="FLASH모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner02.png" alt="">
+                        </span>
+                        <span class="tex">FLASH모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="KG모빌리언스">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner03.png" alt="">
+                        </span>
+                        <span class="tex">KG모빌리언스</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="U+유모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner04.png" alt="">
+                        </span>
+                        <span class="tex">U+유모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="WELL">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner05.png" alt="">
+                        </span>
+                        <span class="tex">WELL</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="freeT">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner06.png" alt="">
+                        </span>
+                        <span class="tex">freeT</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="mobing">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner07.png" alt="">
+                        </span>
+                        <span class="tex">mobing</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="리브모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner08.png" alt="">
+                        </span>
+                        <span class="tex">리브모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="마블프로듀스">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner09.png" alt="">
+                        </span>
+                        <span class="tex">마블프로듀스</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="벨류컴">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner10.png" alt="">
+                        </span>
+                        <span class="tex">벨류컴</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="슈가모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner11.png" alt="">
+                        </span>
+                        <span class="tex">슈가모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="스노우맨">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner12.png" alt="">
+                        </span>
+                        <span class="tex">스노우맨</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="스마텔">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner13.png" alt="">
+                        </span>
+                        <span class="tex">스마텔</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="아이즈모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner14.png" alt="">
+                        </span>
+                        <span class="tex">아이즈모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="앤텔레콤">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner15.png" alt="">
+                        </span>
+                        <span class="tex">앤텔레콤</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="에스원안심모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner16.png" alt="">
+                        </span>
+                        <span class="tex">에스원안심모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="여유텔레콤">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner17.png" alt="">
+                        </span>
+                        <span class="tex">여유텔레콤</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="이야기모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner18.png" alt="">
+                        </span>
+                        <span class="tex">이야기모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="이지모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner19.png" alt="">
+                        </span>
+                        <span class="tex">이지모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="인스모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner20.png" alt="">
+                        </span>
+                        <span class="tex">인스모바일</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="티플러스">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner21.png" alt="">
+                        </span>
+                        <span class="tex">티플러스</span>
+                    </button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="헬로모바일">
+                        <span class="img">
+                            <img src="../../resource/images/data/logo_partner22.png" alt="">
+                        </span>
+                        <span class="tex">헬로모바일</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<!-- 배송 시 요청사항 선택 -->
+<div class="pop_layer normal" id="selectPop02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>배송 시 요청사항 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="배송 전에 미리 연락 바랍니다.">배송 전에 미리 연락 바랍니다.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="부재시 경비실에 맡겨 주세요.">부재시 경비실에 맡겨 주세요.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="부재시 전화 주시거나 문자 남겨 주세요.">부재시 전화 주시거나 문자 남겨 주세요.</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="true" data-option="직접입력">직접입력</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        // 인증방법 라디오 탭
+        $(document).on('change', 'input[name=radio01]', function(){
+            if($(this).is(':checked') == true) {
+                var $thisId = $(this).attr("id");
+                $('[id^="tabpanel_"]').hide();
+                $("#tabpanel_" + $thisId).show();
+            }
+        });
+
+        // 알뜰폰 통신사 선택 팝업
+        $(document).on('click', '#selectPop01 .select_list02 button', '#selectPop02 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+        });
+
+        $(document).on('change', 'input[name=ty_list_01]', function(){
+            if($(this).is(':checked') == true) {
+                
+                var $thisId = $(this).attr("id");
+                
+                if(/ty_list_01_04|ty_list_01_05|ty_list_01_06/i.test($thisId)){
+                    $("#alddl").show();
+                } else {
+                    $('#alddl').hide();
+                }
+            }
+        });
+    });
+
+
+    // 배송시 요청사항 팝업
+    $(function(){
+        $(document).on('click', '#selectPop02 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop02').text(option);
+            popUp.close('#selectPop02', '#btn_selectPop02');
+
+            if(option !== "직접입력"){
+                $('#directInput').hide();
+                
+            } else {
+                $('#directInput').show();
+                $('#directInput input').focus();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">편의점 조회</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">편의점 조회</h2>
+
+            <div class="section">
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01');">편의점 조회</button>
+            </div>
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap height_fix">
+        <div class="pop_header">
+            <h3>GS25 편의점</h3> <!-- 편의점 명 -->
+        </div>
+        <div class="pop_content">
+
+            <div class="section">
+                <div class="box_gray">
+                    <ul class="text_list_bull">
+                        <li>매장 방문 전 반드시 매장에 바로픽업이 가능한지 전화로 확인 하시기 바랍니다.</li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="tab_list">
+                    <ul role="tablist">
+                        <li role="none">
+                            <a href="javascript:void(0);" role="tab" aria-selected="true" aria-controls="tab_panel_01_01">주소/매장명</a>
+                        </li>
+                        <li role="none">
+                            <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_01_02">지하철</button>
+                        </li>
+                        <li role="none">
+                            <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_01_03">내 위치</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabpanel_wrap">
+                    <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_01">
+                        <h3 class="blind">주소/매장명</h3>
+    
+                        <div class="section">
+                            <div class="form_list">
+                                <ul>
+                                    <li>
+                                        <div class="form_item">
+                                            <div class="input_box search">
+                                                <input type="text" class="input" placeholder="주소 또는 매장명 입력">
+                                                <button type="button" class="del_btn" style="display: none;"><span class="blind">입력 내용 삭제</span></button>
+                                                <button type="button" class="search_btn"><span class="blind">검색</span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- // section -->
+    
+                        <div class="section">
+                            <div class="tag_list tagList"> 
+                                <!-- <button type="button" aria-expanded="false"><span class="blind">펼쳐 보기</span></button> -->
+                                <ul>
+                                    <li role="none"><button type="button">전체</button></li>
+                                    <li role="none"><button type="button">유심판매</button></li>
+                                    <li role="none" class="on"><button type="button">바로픽업</button></li>
+                                </ul>
+                            </div>
+    
+                            <div class="sort_wrap">
+                                <div>총 1342건 검색되었습니다</div>
+                            </div>
+                            <div class="line_list">
+                                <ul>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+                                </div>
+                            </div>
+    
+                            <div class="no_dt_sch">
+                                <p>검색 결과가 없습니다</p>
+                            </div>
+                
+                        </div> <!-- // section -->
+                    </div> <!-- // tabpanel -->
+
+                    <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
+                        <h3 class="blind">지하철</h3>
+    
+                        <div class="section">
+
+                            <div class="form_list">
+                                <ul>
+                                    <li>
+                                        <div class="form_item">
+                                            <button type="button" class="select_btn" id="btn_selectPop01" onclick="popUp.open('#selectPop01', '#btn_selectPop01');">지역 선택</button>
+                                        </div>
+                                        <div class="form_item">
+                                            <button type="button" class="select_btn" id="btn_selectPop02" onclick="popUp.open('#selectPop02', '#btn_selectPop02');">노선 선택</button>
+                                        </div>
+                                        <div class="form_item">
+                                            <button type="button" class="select_btn" id="btn_selectPop03" onclick="popUp.open('#selectPop03', '#btn_selectPop03');">역 선택</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="tag_list tagList"> 
+                                <!-- <button type="button" aria-expanded="false"><span class="blind">펼쳐 보기</span></button> -->
+                                <ul>
+                                    <li role="none"><button type="button">전체</button></li>
+                                    <li role="none"><button type="button">유심판매</button></li>
+                                    <li role="none" class="on"><button type="button">바로픽업</button></li>
+                                </ul>
+                            </div>
+    
+                            <div class="sort_wrap">
+                                <div>총 1342건 검색되었습니다</div>
+                            </div>
+                            <div class="line_list">
+                                <ul>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+                                </div>
+                            </div>
+    
+                            <div class="no_dt_sch">
+                                <p>검색 결과가 없습니다</p>
+                            </div>
+                        </div>
+                    </div> <!-- // tabpanel -->
+                    <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_03">
+                        <h3 class="blind">내 위치</h3>
+    
+                        <div class="section">
+                            <div class="sort_wrap">
+                                <div>총 1342건 검색되었습니다</div>
+                            </div>
+                            <div class="line_list">
+                                <ul>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="tit_bo">GS25상일동아점</span>
+                                                    <strong class="tit_inven fc01">재고 4개</strong>
+                                                </div>
+                                                <span class="tit ty03">서울 강동구 상암로 405, 제101동 제상가1호 (상일동 473, 외 1필지 상일동아아파트)</span>
+                                                <div class="bag_list">
+                                                    <span class="bag_clr_c02">유심판매</span>
+                                                    <span class="bag_clr_c03">바로픽업</span>
+                                                </div>
+                                            </div>
+                                            <div class="bo_btn_list">
+                                                <button type="button" class="bo_btn_local">
+                                                    <span class="blind">지도 보기</span>
+                                                </button>
+                                                <button type="button" class="bo_btn_call">
+                                                    <span class="blind">전화 걸기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+                                </div>
+                            </div>
+    
+                            <div class="no_dt_sch">
+                                <p>검색 결과가 없습니다</p>
+                            </div>
+                        </div>
+                    </div> <!-- // tabpanel -->
+                </div> <!-- // tabpanel_wrap -->
+            </div> <!-- // section -->
+        </div>
+        
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.close('#popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer normal" id="selectPop01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>지역 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="수도권">수도권</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="부산">부산</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="대전">대전</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="대구">대구</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="광주">광주</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer normal" id="selectPop02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>노선 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="노선1">노선1</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="노선2">노선2</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="노선3">노선3</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="노선4">노선4</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="노선5">노선5</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer normal" id="selectPop03">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>역 선택</h3>
+        </div>
+        <div class="pop_content">
+            <ul class="select_list" role="listbox">
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="역1">역1</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="역2">역2</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="역3">역3</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="역4">역4</button>
+                </li>
+                <li role="none">
+                    <button type="button" role="option" aria-selected="false" data-option="역5">역5</button>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    $(function(){
+        popUp.open('#popup01');
+
+        $(document).on('click', '#selectPop01 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop01').text(option);
+            popUp.close('#selectPop01', '#btn_selectPop01');
+        });
+        $(document).on('click', '#selectPop02 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop02').text(option);
+            popUp.close('#selectPop02', '#btn_selectPop02');
+        });
+        $(document).on('click', '#selectPop03 .select_list button', function(){
+            var option = $(this).attr('data-option');
+
+            $('#btn_selectPop03').text(option);
+            popUp.close('#selectPop03', '#btn_selectPop03');
+        });
+    });
+</script>
+
+</body>
+</html>

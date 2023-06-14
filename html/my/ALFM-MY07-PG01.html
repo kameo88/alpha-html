@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">사용자 평점·후기 등록</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">사용자 평점·후기 등록</h2>
+
+            <div class="section">
+                <h3 class="tit02">요금제</h3>
+                
+                <div class="table_ty01">
+                    <table>
+                        <caption>요금제</caption>
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tr>
+                            <th scope="row">사업자</th>
+                            <td>프리티</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">요금제</th>
+                            <td>5G 더빠른 180GB+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">개통일</th>
+                            <td>2022.10.03</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">월 통신 요금</th>
+                            <td>51,700원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">부가서비스</th>
+                            <td>2건</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="eval_list">
+                    <ul>
+                        <li>
+                            <div class="eval_item">
+                                <h3 class="tit02">개통과정은 잘 되었나요?</h3>
+                                <div class="eval_star">
+                                    <div class="rate">
+                                        <input type="radio" id="rating_01_5" name="rating01" value="5"><label for="rating_01_5" title="5점"></label>
+                                        <input type="radio" id="rating_01_4" name="rating01" value="4"><label for="rating_01_4" title="4점"></label>
+                                        <input type="radio" id="rating_01_3" name="rating01" value="3"><label for="rating_01_3" title="3점"></label>
+                                        <input type="radio" id="rating_01_2" name="rating01" value="2"><label for="rating_01_2" title="2점"></label>
+                                        <input type="radio" id="rating_01_1" name="rating01" value="1"><label for="rating_01_1" title="1점"></label>
+                                    </div>
+                                </div>
+                                <div class="eval_desc">
+                                    <span class="desc_s00" style="display:inline-block;">선택해주세요</span>
+                                    <span class="desc_s01">1점 (별로예요)</span>
+                                    <span class="desc_s02">2점 (그저그래요)</span>
+                                    <span class="desc_s03">3점 (괜찮아요)</span>
+                                    <span class="desc_s04">4점 (좋아요)</span>
+                                    <span class="desc_s05">5점 (최고에요)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eval_item">
+                                <h3 class="tit02">고객상담은 어떠셨나요?</h3>
+                                <div class="eval_star">
+                                    <div class="rate">
+                                        <input type="radio" id="rating_02_5" name="rating02" value="5"><label for="rating_02_5" title="5점"></label>
+                                        <input type="radio" id="rating_02_4" name="rating02" value="4"><label for="rating_02_4" title="4점"></label>
+                                        <input type="radio" id="rating_02_3" name="rating02" value="3"><label for="rating_02_3" title="3점"></label>
+                                        <input type="radio" id="rating_02_2" name="rating02" value="2"><label for="rating_02_2" title="2점"></label>
+                                        <input type="radio" id="rating_02_1" name="rating02" value="1"><label for="rating_02_1" title="1점"></label>
+                                    </div>
+                                </div>
+                                <div class="eval_desc">
+                                    <span class="desc_s00" style="display:inline-block;">선택해주세요</span>
+                                    <span class="desc_s01">1점 (별로예요)</span>
+                                    <span class="desc_s02">2점 (그저그래요)</span>
+                                    <span class="desc_s03">3점 (괜찮아요)</span>
+                                    <span class="desc_s04">4점 (좋아요)</span>
+                                    <span class="desc_s05">5점 (최고에요)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eval_item">
+                                <h3 class="tit02">개통 이후 만족하셨나요?</h3>
+                                <div class="eval_star">
+                                    <div class="rate">
+                                        <input type="radio" id="rating_03_5" name="rating03" value="5"><label for="rating_03_5" title="5점"></label>
+                                        <input type="radio" id="rating_03_4" name="rating03" value="4"><label for="rating_03_4" title="4점"></label>
+                                        <input type="radio" id="rating_03_3" name="rating03" value="3"><label for="rating_03_3" title="3점"></label>
+                                        <input type="radio" id="rating_03_2" name="rating03" value="2"><label for="rating_03_2" title="2점"></label>
+                                        <input type="radio" id="rating_03_1" name="rating03" value="1"><label for="rating_03_1" title="1점"></label>
+                                    </div>
+                                </div>
+                                <div class="eval_desc">
+                                    <span class="desc_s00" style="display:inline-block;">선택해주세요</span>
+                                    <span class="desc_s01">1점 (별로예요)</span>
+                                    <span class="desc_s02">2점 (그저그래요)</span>
+                                    <span class="desc_s03">3점 (괜찮아요)</span>
+                                    <span class="desc_s04">4점 (좋아요)</span>
+                                    <span class="desc_s05">5점 (최고에요)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eval_item">
+                                <h3 class="tit02">어떤점이 좋았나요?</h3>
+                                <div class="textarea_box">
+                                    <textarea class="textarea" placeholder="최소 10자 이상 입력해주세요." maxlength="1000"></textarea>
+                                    <div class="byte_check">
+                                        <span class="count">0</span><span class="total">1,000</span>
+                                    </div>
+                                </div>
+                                <div class="text_info">관련없는 내용이나 동일문자의 반복 등 부적합한 내용의 후기작성은 통보없이 삭제됩니다. </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <!-- 사용자 평점/후기 등록 -->
+            <div class="section"> 
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c06">취소하기</button>
+                    <button type="button" class="btn_sM_c03" disabled>수정하기</button>
+                </div>
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    //sample
+
+    $(function(){
+        $(document).on('change', '[id*="rating_"]', function(){
+            var $this = $(this),
+                $thisValue = $this.attr("value");
+
+            $this.closest(".eval_star").next(".eval_desc").find("span").css("display", "none");
+            $this.closest(".eval_star").next(".eval_desc").find("span").eq($thisValue).css("display", "inline-block");
+        });
+    });
+</script>
+
+</body>
+</html>

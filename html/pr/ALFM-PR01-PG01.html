@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">요금제 상세</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content cont_ratePlan" id="content"> <!-- class="cont_ratePlan" 요금제 max-width:96rem; -->
+            <h2 class="title_nav">
+                요금제 상세
+                <button type="button" class="share_btn" id="btn_share" onclick="popUp.open('#sharePop', '#btn_share');">공유하기</button>
+            </h2>
+
+            <div class="section">
+
+                <div class="plan_topCon">
+                    <div class="plan_con">
+                        <div class="top">
+                            <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button> <!-- 활성화 class="... on" -->
+                            <div class="beft">
+                                <img src="../../resource/images/component/img_flag01.png" alt="특가">
+                                <img src="../../resource/images/component/img_flag02.png" alt="+알파 only">
+                            </div>
+                        </div>
+                        <div class="tit">
+                            <em>데이터안심15G+</em>
+                            <strong>월 11GB + 매일 2GB <span>+ 3Mbps</span></strong>
+                            <i>데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</i>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <dl class="phone" aria-label="통화">
+                                    <dt>기본제공</dt>
+                                    <dd>부가통화 300분</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl class="message" aria-label="문자">
+                                    <dt>100건</dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <dl class="cellular" aria-label="통신기술">
+                                    <dt>5G</dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="share_btn" id="btn_share" onclick="popUp.open('#sharePop', '#btn_share');">공유하기</button>
+                </div>
+
+                <div class="partner_bnr mgt32">
+                    <a href="javascript:void(0);">
+                        <div class="partner">
+                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                        </div>
+                        <strong>프리티 자세히보기</strong>
+                    </a>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit03"><sup>+</sup>알파만의 혜택</h3>
+
+                <div class="acdItem_wrap tog crp_benefits_list">
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">유플러스만의 혜택</a>
+                        <div class="acd_panel" role="region">
+                            
+                            <div class="crp_ben_item">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_benefits01.png" alt="">
+                                </div>
+                                <dl>
+                                    <dt>스타벅스</dt>
+                                    <dd>스타벅스 라떼 2잔</dd>
+                                </dl>
+                                <button type="button" class="btn_sXS_c07">혜택보기</button>
+                            </div>
+                            
+                            <div class="crp_ben_item">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_benefits01.png" alt="">
+                                </div>
+                                <dl>
+                                    <dt>스타벅스</dt>
+                                    <dd>스타벅스 라떼 2잔</dd>
+                                </dl>
+                                <button type="button" class="btn_sXS_c07">혜택보기</button>
+                            </div>
+                            
+                            <div class="crp_ben_item">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_benefits01.png" alt="">
+                                </div>
+                                <dl>
+                                    <dt>스타벅스</dt>
+                                    <dd>스타벅스 라떼 2잔</dd>
+                                </dl>
+                                <button type="button" class="btn_sXS_c07">혜택보기</button>
+                            </div>
+
+                            <button type="button" class="crp_ben_more">더볼래요</button>
+
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">프리티의 혜택</a>
+                        <div class="acd_panel" role="region">
+                            
+                            <div class="crp_ben_item">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_benefits01.png" alt="">
+                                </div>
+                                <dl>
+                                    <dt>스타벅스</dt>
+                                    <dd>스타벅스 라떼 2잔</dd>
+                                </dl>
+                                <button type="button" class="btn_sXS_c07">혜택보기</button>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">제휴카드 혜택</a>
+                        <div class="acd_panel" role="region">
+                            
+                            <div class="crp_ben_item">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_benefits01.png" alt="">
+                                </div>
+                                <dl>
+                                    <dt>스타벅스</dt>
+                                    <dd>스타벅스 라떼 2잔</dd>
+                                </dl>
+                                <button type="button" class="btn_sXS_c07">혜택보기</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit03">부가서비스</h3>
+                
+                <div class="con_bnr mgb32">
+                    <a href="javascript:void(0);">
+                        <div class="tex">
+                            <span>알뜰폰도 인터넷/TV와 결합할 수 있어요!</span>
+                            <strong>LG U+ 인터넷/TV 결합하기</strong>
+                        </div>
+                        <img src="../../resource/images/content/img_bnr01.png" alt="">
+                    </a>
+                </div>
+
+                <div class="va_services">
+                    <div>
+                        <strong>지원</strong>
+                        <dl class="serv01">
+                            <dt>가족결합</dt>
+                            <dd>가입자당 월 440원 할인</dd>
+                        </dl>
+                        <dl class="serv02">
+                            <dt>모바일 핫스팟</dt>
+                            <dd>11GB 제공</dd>
+                        </dl>
+                        <dl class="serv03">
+                            <dt>소액결제</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl class="serv04">
+                            <dt>해외로밍</dt>
+                            <dd>⁠신청은 통신사에 문의</dd>
+                        </dl>
+                        <dl class="serv05">
+                            <dt>데이터 쉐어링</dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <strong>미지원</strong>
+                        <dl class="serv01 off">
+                            <dt>가족결합</dt>
+                            <dd>가입자당 월 440원 할인</dd>
+                        </dl>
+                        <dl class="serv02 off">
+                            <dt>모바일 핫스팟</dt>
+                            <dd>11GB 제공</dd>
+                        </dl>
+                        <dl class="serv03 off">
+                            <dt>소액결제</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl class="serv04 off">
+                            <dt>해외로밍</dt>
+                            <dd>⁠신청은 통신사에 문의</dd>
+                        </dl>
+                        <dl class="serv05 off">
+                            <dt>데이터 쉐어링</dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div> <!-- // section -->
+
+            <div class="section">
+                
+                <div class="tab_list">
+                    <ul role="tablist">
+                        <li role="none">
+                            <button type="button" role="tab" aria-selected="true" aria-controls="tab_panel_01_01">사용자 리뷰</button>
+                        </li>
+                        <li role="none">
+                            <button type="button" role="tab" aria-selected="false" aria-controls="tab_panel_01_02">블로그 리뷰</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabpanel_wrap">
+                    <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_01">
+                        <h3 class="blind">사용자 리뷰</h3>
+    
+                        <div class="section">
+                            
+                            <div class="review_point">
+                                <div class="rp_l">
+                                    <div class="all">
+                                        <strong>5.0</strong>
+                                        <span>(56개)</span>
+                                    </div>
+                                </div>
+                                <div class="rp_r">
+                                    <div class="detail">
+                                        <dl>
+                                            <dt>개통과정</dt>
+                                            <dd>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:100%;"></div>
+                                                </div>
+                                                <strong>5.0</strong>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>고객상담</dt>
+                                            <dd>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:40%;"></div>
+                                                </div>
+                                                <strong>4.0</strong>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>요금제 만족도</dt>
+                                            <dd>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:80%;"></div>
+                                                </div>
+                                                <strong>4.0</strong>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div> <!-- // review_point -->
+
+                            <div class="line_list ty02">
+                                <ul>
+                                    <li>
+                                        <div class="list_con02">
+                                            <div class="cus">
+                                                <span class="name">김*파</span>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:40%;"></div>
+                                                </div>
+                                                <span class="score">0.0</span>
+                                                <span class="date">2023.04.11</span>
+                                            </div>
+                                            <span class="tit">
+                                                전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con02">
+                                            <div class="cus">
+                                                <span class="name">김*파</span>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:40%;"></div>
+                                                </div>
+                                                <span class="score">0.0</span>
+                                                <span class="date">2023.04.11</span>
+                                            </div>
+                                            <span class="tit">
+                                                전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_con02">
+                                            <div class="cus">
+                                                <span class="name">김*파</span>
+                                                <div class="star_box">
+                                                    <div class="star"></div>
+                                                    <div class="star_active" style="width:40%;"></div>
+                                                </div>
+                                                <span class="score">0.0</span>
+                                                <span class="date">2023.04.11</span>
+                                            </div>
+                                            <span class="tit">
+                                                전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <button type="button" class="btn_sM_c05" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">전체보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- // tabpanel -->
+                    <div role="tabpanel" aria-expanded="false" tabindex="0" id="tab_panel_01_02">
+                        <h3 class="blind">블로그 리뷰</h3>
+    
+                        <div class="section">
+                            <div class="line_list ty02">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="name">올리브소스 님</span>
+                                                    <span class="date">2023.04.11</span>
+                                                </div>
+                                                <span class="tit ellipsis2">
+                                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                                </span>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="name">올리브소스 님</span>
+                                                    <span class="date">2023.04.11</span>
+                                                </div>
+                                                <span class="tit ellipsis2">
+                                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                                </span>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="list_con03">
+                                            <div class="list_lft">
+                                                <div class="cus">
+                                                    <span class="name">올리브소스 님</span>
+                                                    <span class="date">2023.04.11</span>
+                                                </div>
+                                                <span class="tit ellipsis2">
+                                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                                </span>
+                                            </div>
+                                            <div class="img">
+                                                <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="group_btn">
+                                    <button type="button" class="btn_sM_c05" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">전체보기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- // tabpanel -->
+                </div> <!-- // tabpanel_wrap -->
+
+            </div> <!-- // section -->
+            
+            <div class="section">
+                <div class="tit_wrap">
+                    <h3 class="tit03">비슷한 요금제</h3>
+                    <a href="javascript:void(0);" class="more">더보기</a>
+                </div>
+
+                <div class="swiper cardSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="tit_wrap">
+                    <h3 class="tit03">많이 찾은 요금제</h3>
+                    <a href="javascript:void(0);" class="more">더보기</a>
+                </div>
+
+                <div class="swiper cardSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="plan_item">
+                                    <div class="card_top">
+                                        <div class="partner">
+                                            <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                            <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="card_mid">
+                                        <span class="plan_tit">데이터안심15G+</span>
+                                        <strong class="plan_tit_sub">월 11GB + 매일 2GB + 3Mbps</strong>
+                                    </div>
+                                    <div class="combi">
+                                        <div class="combi_inner">
+                                            <strong>월 10,890원</strong>
+                                            <span class="period">6개월 이후 38,900원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit03">요금제 상세정보</h3>
+
+                <div class="acdItem_wrap tog crp_detail_list">
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">초과 이용 요금</a>
+                        <div class="acd_panel" role="region">
+                            
+                            <div class="ove_charge">
+                                <dl class="div01">
+                                    <dt>음성(초)</dt>
+                                    <dd>1.98원</dd>
+                                </dl>
+                                <dl class="div02">
+                                    <dt>영상(초)</dt>
+                                    <dd>22원</dd>
+                                </dl>
+                                <dl class="div03">
+                                    <dt>SMS(건)</dt>
+                                    <dd>22원</dd>
+                                </dl>
+                                <dl class="div04">
+                                    <dt>LMS(건)</dt>
+                                    <dd>22원</dd>
+                                </dl>
+                                <dl class="div05">
+                                    <dt>MMS(건)</dt>
+                                    <dd>220원</dd>
+                                </dl>
+                                <dl class="div06">
+                                    <dt>데이터(MB)</dt>
+                                    <dd>22.58원</dd>
+                                </dl>
+                            </div>
+
+                            <ul class="text_list_bull">
+                                <li>SMS : 단문 Text형 문자 (한글 70자/영문 140자 이하)</li>
+                                <li>LMS : 장문 Text형 문자 (한글 71자/영문 141자 이상)</li>
+                                <li>MMS : 멀티미디어형 문자 (사진, 동영상)</li>
+                                <li>VAT 포함</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="false" class="acd_btn">데이터(상세)</a>
+                        <div class="acd_panel" role="region">
+                            <ul class="text_list_bull">
+                                <li>데이터(상세)</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="false" class="acd_btn">음성(상세)</a>
+                        <div class="acd_panel" role="region">
+                            <ul class="text_list_bull">
+                                <li>음성(상세)</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="false" class="acd_btn">메시지(상세)</a>
+                        <div class="acd_panel" role="region">
+                            <ul class="text_list_bull">
+                                <li>메시지(상세)</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="acd_st acdItem">
+                        <a href="javascript:void(0);" role="button" aria-expanded="true" class="acd_btn">유의사항</a>
+                        <div class="acd_panel" role="region">
+                            <ul class="text_list_bull">
+                                <li>유의사항</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="con_bnr">
+                    <a href="javascript:void(0);">
+                        <div class="tex">
+                            <span>선불유심요금제로 가입할 매장을 찾고 계신가요?</span>
+                            <strong>내 주변 매장찾기</strong>
+                        </div>
+                        <img src="../../resource/images/content/img_bnr02.png" alt="">
+                    </a>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="group_btn">
+                    <a href="javascript:void(0);" role="button" class="btn_sM_c05">목록보기</a>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="plan_join">
+                        <div>
+                            <div class="tex">
+                                <strong><span class="fc01">결합하면</span> 월 14,900원</strong>
+                                <p>8개월 이후 39,490원</p>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_sL_c01">가입하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer alert" id="sharePop">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>공유하기</h3>
+        </div>
+        <div class="pop_content">
+            <div class="cir_icon_link">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="facebook_icon_link">
+                            <span>페이스북</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="kakao_icon_link">
+                            <span>카카오톡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="url_icon_link">
+                            <span>URL 복사</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">닫기</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>사용자 리뷰</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                
+                <div class="line_list">
+                    <ul>
+                        <li>
+                            <div class="list_con02">
+                                <div class="cus">
+                                    <span class="name">김*파</span>
+                                    <div class="star_box">
+                                        <div class="star"></div>
+                                        <div class="star_active" style="width:40%;"></div>
+                                    </div>
+                                    <span class="score">0.0</span>
+                                    <span class="date">2023.04.11</span>
+                                </div>
+                                <span class="tit">
+                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_con02">
+                                <div class="cus">
+                                    <span class="name">김*파</span>
+                                    <div class="star_box">
+                                        <div class="star"></div>
+                                        <div class="star_active" style="width:40%;"></div>
+                                    </div>
+                                    <span class="score">0.0</span>
+                                    <span class="date">2023.04.11</span>
+                                </div>
+                                <span class="tit">
+                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_con02">
+                                <div class="cus">
+                                    <span class="name">김*파</span>
+                                    <div class="star_box">
+                                        <div class="star"></div>
+                                        <div class="star_active" style="width:40%;"></div>
+                                    </div>
+                                    <span class="score">0.0</span>
+                                    <span class="date">2023.04.11</span>
+                                </div>
+                                <span class="tit">
+                                    전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- // section -->
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer full" id="popup02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>블로그 리뷰</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                
+                <div class="line_list">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con03">
+                                <div class="list_lft">
+                                    <div class="cus">
+                                        <span class="name">올리브소스 님</span>
+                                        <span class="date">2023.04.11</span>
+                                    </div>
+                                    <span class="tit ellipsis2">
+                                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                    </span>
+                                </div>
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con03">
+                                <div class="list_lft">
+                                    <div class="cus">
+                                        <span class="name">올리브소스 님</span>
+                                        <span class="date">2023.04.11</span>
+                                    </div>
+                                    <span class="tit ellipsis2">
+                                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                    </span>
+                                </div>
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="list_con03">
+                                <div class="list_lft">
+                                    <div class="cus">
+                                        <span class="name">올리브소스 님</span>
+                                        <span class="date">2023.04.11</span>
+                                    </div>
+                                    <span class="tit ellipsis2">
+                                        전에 LG U+사용했었는데 현재 알뜰요금제 변경후 10일정도 된것 같은데 전과 비교해서 사용하는데 아무 문제없이 잘 사용 하고 있습니다. 
+                                    </span>
+                                </div>
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_thum.png" alt="블로그 리뷰 썸네일">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- // section -->
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    //  sample
+
+    $(function(){
+
+        // 찜하기, 비교하기
+        $(document).on('click', '.plan_con button.bag_btn_c01', function(){
+            $(this).toggleClass("on");
+        });
+
+        var swiper = new Swiper(".cardSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            observer: true,
+            observeParents: true,
+        });
+
+    });
+</script>
+
+</body>
+</html>

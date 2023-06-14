@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">가입신청 완료 팝업</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">가입신청 완료 팝업</h2>
+            
+            <div class="section">
+                <h3 class="tit02">셀프개통 불가한 시간에, 신규가입으로 가입신청 완료 시</h3>
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01', '#btn_popup01');">Alert</button>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="tit02">USIM 없이, 가입신청 완료 시</h3>
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c03" id="btn_popup02" onclick="popUp.open('#popup02', '#btn_popup02');">Alert</button>
+                </div>
+            </div>
+                
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<!-- 셀프개통 불가한 시간 경우 -->
+<div class="pop_layer alert" id="popup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                지금은 셀프개통 가능한 시간이 아닙니다. <br>
+                ⁠셀프개통 가능한 시간에, <br>
+                ⁠마이페이지>내가 신청한 요금제 <br>
+                상세 화면에서 <span class="fc01">⁠희망번호</span>를 선택 후 <br>
+                개통을 완료해주세요!
+            </div>
+            <div class="box_gray mgt20">
+                <strong>셀프개통 업무시간 안내</strong>
+                <ul class="text_list_bull">
+                    <li>
+                        신규가입 <br>
+                        : 오전 8시 ~ 오후 8시 (평일/토요일)
+                    </li>
+                    <li>
+                        번호이동 <br>
+                        : 오전 10시 ~ 오후 8시 (평일/토요일)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">확인</button> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<!-- USIM 없는 경우 -->
+<div class="pop_layer alert" id="popup02">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                택배로 USIM을 받게 되시면, <br>
+                마이페이지>내가 신청한 요금제 <br>
+                상세 화면에서 <span class="fc01">USIM 정보를 입력</span> 후 <br>
+                개통을 완료해주세요!
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">확인</button> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">희망번호 찾기</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">희망번호 찾기</h2>
+
+            <div class="section">
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01');">희망번호 찾기</button>
+            </div>
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap height_fix">
+        <div class="pop_header">
+            <h3>희망번호 찾기</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <div class="input_box search find_num">
+                                <input type="number" class="input" placeholder="4자리 숫자">
+                                <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                <button type="button" class="search_btn"><span class="blind">검색</span></button>
+                                <div class="num_mark">010-<span>****</span>-</div>
+                            </div>
+                            <div class="text_info">희망하는 번호를 입력해 주세요.</div>
+                        </li>
+                        <li>
+                            <!-- 검색결과 있을 경우 -->
+                            <strong class="form_tit">희망하는 번호를 선택해주세요</strong>
+                            <div class="table_ty02">
+                                <table>
+                                    <caption>번호 목록</caption>
+                                    <colgroup>
+                                        <col style="width:100%">
+                                    </colgroup>
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio01_00" name="radio01">
+                                                    <label for="radio01_00"><span>010-8286-9635</span></label>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio01_01" name="radio01">
+                                                    <label for="radio01_01"><span>010-8286-9635</span></label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio01_02" name="radio01">
+                                                    <label for="radio01_02"><span>010-8286-9635</span></label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio01_03" name="radio01">
+                                                    <label for="radio01_03"><span>010-8286-9635</span></label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">유사번호를 선택해주세요</strong>
+                            <div class="table_ty02">
+                                <table>
+                                    <caption>유사번호 목록</caption>
+                                    <colgroup>
+                                        <col style="width:100%">
+                                    </colgroup>
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio02_00" name="radio02">
+                                                    <label for="radio02_00"><span>010-8286-9635</span></label>
+                                                </div>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio_st">
+                                                    <input type="radio" id="radio02_01" name="radio02">
+                                                    <label for="radio02_01"><span>010-8286-9635</span></label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 검색결과 없을 경우 -->
+                <div class="no_dt_sch">
+                    <p>검색 결과가 없습니다</p>
+                </div>
+            </div> <!-- // section -->
+        </div>
+        
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03" id="nextBtn" disabled>번호선택</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.close('#popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+$(function(){
+    popUp.open('#popup01');
+
+    $(document).on('change', 'input[name=step01]', function(){
+        if($(this).is(':checked') == true) {
+            $('#nextBtn').removeAttr('disabled');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

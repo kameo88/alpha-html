@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">header</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+                <button type="button" class="h_close"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">Guide</h2>
+            
+            <div class="page_info">flag & badge</div>
+
+            <div class="section">
+                <h3 class="tit02">btn badge</h3>
+                <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button>
+                <button type="button" class="bag_btn_c02">비교하기</button>
+            </div> <!-- // section -->
+            <script>
+                //btn badge
+                $(document).on('click', '[class*="bag_btn_"]', function(){
+                    $(this).toggleClass("on");
+                });
+            </script>
+
+            <div class="section">
+                <h3 class="tit02">text badge</h3>
+                <span class="bag_clr_c01">유심판매</span>
+                <span class="bag_clr_c02">바로픽업</span>
+                <span class="bag_clr_c03">답변완료</span>
+                <span class="bag_clr_c04">결합할인</span>
+                <span class="bag_clr_c05">회원가입</span>
+                <span class="bag_clr_c06">혜택</span>
+                <span class="bag_clr_c07">도로명</span>
+                <span class="bag_clr_c08">도로명</span>
+                <span class="bag_clr_c09">도로명</span>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit02">event badge</h3>
+                <span class="bag_evt_d">D-24</span>
+                <span class="bag_evt_ty01">제휴카드</span>
+                <span class="bag_evt_ty02">제휴카드</span>
+                <span class="bag_evt_ty03">제휴카드</span>
+                <span class="bag_evt_ty04">제휴카드</span>
+            </div> <!-- // section -->
+            
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+</body>
+</html>

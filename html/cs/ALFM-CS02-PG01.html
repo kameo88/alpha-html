@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">내 주변 매장 찾기</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content cont_map" id="content">
+            <h2 class="title_nav">내 주변 매장 찾기</h2>
+
+            <div class="cm_wrap">
+                <div class="shop_search_area">
+                    <div class="section">
+                        <div class="input_box search">
+                            <input type="text" class="input" placeholder="어느 매장을 방문하고 싶으세요?">
+                            <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                            <button type="button" class="search_btn"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="shop_none" style="display:block;">
+                        <div class="no_dt_sch">
+                            <p>입력하신 지역으로 <br>이용 가능한 매장 정보가 없습니다.</p>
+                        </div>
+                        
+                        <div class="box_gray">
+                            <p>자주하는 질문에서 궁금하신 내용을 해결해 보세요.</p>
+                            <a href="javascript:void(0);" role="button" class="btn_sXS_c07">자주하는 질문</a>
+                        </div>
+                    </div>
+
+                    <div class="shop_area" style="display:none;">
+                        <div class="shop_check">
+                            <div class="but">
+                                <button type="button" class="all on">전체</button>
+                                <button type="button" class="al on">알뜰폰+</button>
+                                <button type="button" class="cs on">CS업무</button>
+                                <button type="button" class="us on">선불유심개통</button>
+                            </div>
+
+                            <button type="button" class="tip_more" aria-expanded="false">
+                                <span class="pc_hide">더 자세한 설명이 필요하신가요?</span>
+                                <span class="pc_show">안내</span>
+                            </button>
+
+                            <div class="tip" style="display:none;" role="tooltip">
+                                <ul>
+                                    <li class="al">알뜰폰+ : +알파 전용 매장이에요. (알뜰폰 CS상담 및 선불유심 개통 가능)</li>
+                                    <li class="cs">CS업무 : LGU+매장이지만, 알뜰폰 CS상담이 가능한 매장이에요.</li>
+                                    <li class="us">선불유심개통 : LGU+매장이지만, 알뜰폰 선불유심을 개통 할 수 있는 매장이에요.</li>
+                                </ul>
+                                <button type="button"><span>숨기기</span></button>
+                            </div>
+                        </div>
+
+                        <div class="shop_list">
+                            <button type="button" aria-expanded="false">주변 방문 가능한 매장 <b>32</b>개</button>
+                            <div role="region" style="display:none;">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card" id="btn_shopPopup01" onclick="popUp.open('#shopPopup01', '#btn_shopPopup01');">
+                                            <div>
+                                                <strong>LG유플러스 상암동 누리꿈점</strong>
+                                                <i class="fla01">알뜰폰+</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card">
+                                            <div>
+                                                <strong>LG유플러스 상암사옥</strong>
+                                                <i class="fla02">CS업무</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card">
+                                            <div>
+                                                <strong>LG유플러스 남가좌동 가좌역점</strong>
+                                                <i class="fla03">선불유심개통</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card" onclick="popUp.open('#shopPopup01', '');">
+                                            <div>
+                                                <strong>LG유플러스 상암동 누리꿈점</strong>
+                                                <i class="fla01">알뜰폰+</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card">
+                                            <div>
+                                                <strong>LG유플러스 상암사옥</strong>
+                                                <i class="fla02">CS업무</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" role="button" class="shop_card">
+                                            <div>
+                                                <strong>LG유플러스 남가좌동 가좌역점</strong>
+                                                <i class="fla03">선불유심개통</i>
+                                            </div>
+                                            <ul>
+                                                <li>서울 마포구 월드컵북로 396, 100호 (상암동 1605, 누리꿈스퀘어 1F)</li>
+                                                <li>070-358-3515</li>
+                                            </ul>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- // shop_area -->
+                </div> <!-- // shop_search_area -->
+
+                <div class="map_area">
+                    <span style="display:block; padding:5rem; text-align:center;">지도</span>
+
+                    <div style="position:absolute; top:0; left:0; width:50px; height:80px; background-color:rgba(0,0,0,0.4); color:#fff; text-align:center;">x:30, y:50</div>
+
+                    <div class="map_pin" style="position:absolute; left:50px; top:80px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin01.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="map_pin" style="position:absolute; left:30px; top:130px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin02.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="map_pin" style="position:absolute; left:30px; top:180px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin03.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="map_pin" style="position:absolute; left:190px; top:290px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin01.png" alt="">
+                        </a>
+                        <div class="map_marker_pop">
+                            <a href="javascript:void(0);" class="inner">
+                                <dl>
+                                    <dt>LG유플러스 상암동 누리꿈점 누리꿈점</dt>
+                                    <dd>070-358-3515</dd>
+                                    <dd>오전 10:00 ~ 오후 20:00</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map_pin" style="position:absolute; left:150px; top:310px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin02.png" alt="">
+                        </a>
+                        <div class="map_marker_pop">
+                            <a href="javascript:void(0);" class="inner">
+                                <dl>
+                                    <dt>LG유플러스 상암동 누리꿈점 누리꿈점</dt>
+                                    <dd>070-358-3515</dd>
+                                    <dd>오전 10:00 ~ 오후 20:00</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map_pin" style="position:absolute; left:130px; top:230px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin03.png" alt="">
+                        </a>
+                        <div class="map_marker_pop">
+                            <a href="javascript:void(0);" class="inner">
+                                <dl>
+                                    <dt>LG유플러스 상암동 누리꿈점 누리꿈점</dt>
+                                    <dd>070-358-3515</dd>
+                                    <dd>오전 10:00 ~ 오후 20:00</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="map_pin big" style="position:absolute; left:190px; top:290px;">
+                        <a href="javascript:void(0);" role="button">
+                            <img src="../../resource/images/ico/ico_pin01_big.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="map_marker_pop" style="position:absolute; left:74px; top:100px;">
+                        <a href="javascript:void(0);" class="inner">
+                            <dl>
+                                <dt>LG유플러스 상암동 누리꿈점 누리꿈점</dt>
+                                <dd>070-358-3515</dd>
+                                <dd>오전 10:00 ~ 오후 20:00</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    -->
+
+                </div> <!-- // map_area -->
+            </div>
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="termsPopup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>위치정보 활용 동의</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section">
+                
+                <div class="terms_area">
+                    위치정보  활용정보 제공에 관한 동의서 <br>
+                    <br>
+                    제 1조(목적) <br>
+                    (주)뉴플로이(이하 ‘회사’라 한다)의 뉴플로이에 관한 모든 관련 서비스(이하 ‘서비스’라 한다)는 회원님에게 보다 다양한 정보를 제공하고, 서비스의 질을 향상시키기 위하여 당사의 제휴사에게 「개인정보보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률 」및 「신용정보의 이용 및 보호에 관한 법률」의 규정을 준수하여 회원님의 개인(신용)정보를 제3자에게 상품소개 및 홍보 등 영업목적으로 제공할 수 있습니다. <br>
+                    <br>
+                    제 2조(수집 및 활용 관련 정보) <br>
+                    개인정보가 제공되는 비즈니스 파트너사, 제공 정보, 제공된 정보의 이용목적은 아래와 같습니다. 회원님들 중 이 개인정보의 제3자 마케팅 활용동의서 등에 동의하신 회원님들의 정보만이 제공되며, 제공된 정보는 명시된 이용목적을 벗어나 이용되지 않고, 개인정보의 유출 등 사고가 일어나지 않도록 더욱 철저한 보안이 이루어지도록 노력하고 있습니다. <br>
+                    <br>
+                    제 3조(제3자 정보제공의 동의 철회) <br>
+                    본 동의서에 동의하고 가입하신 신규회원 중 제3자 정보제공을 철회하고 싶은 회원은 이미 제3자에게 제공된 개인정보라 하더라도, 언제든지 열람, 정정, 삭제를 요구할 수 있습니다. 열람, 정정, 삭제 및 정보제공 동의 철회는 뉴플로이 고객센터(02-6956-4660)를 통해 본인확인 후 요청할 수 있습니다. 해당 요청의 근거자료를 남기기 위해 해당 통화내역은 녹취될 수 있으며 회원은 이에 동의하는 것으로 간주합니다. <br>
+                    이미 제공된 회원정보를 철회하는 데는 최대 10일의 기간이 소요됩니다. 활용동의 철회를 요청하시더라도 위와 같은 이유로 해당 철회 적용 이전까지 마케팅에 활용 될 수 있음을 알려드립니다. <br>
+                    회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리되도록 최선의 노력을 다하겠습니다. <br>
+                </div>
+
+            </div> <!-- // section -->
+        </div>
+        <div class="pop_footer">
+            <div class="terms_consent mgb32">
+                <div class="cst_box check_st">
+                    <input type="checkbox" id="check_01" name="">
+                    <label for="check_01">매장안내를 받기 위해 위치정보 활용 이용약관에 동의합니다. (필수)</label>
+                </div>
+            </div>
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03" onclick="termsCheck();">확인</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer alert" id="alert01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>위치정보 활용 동의 안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="info_con">
+                [내 주변 매장 찾기] 메뉴를 <br>이용하기 위해서는 <br>위치정보 활용 동의가 꼭 필요해요!
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">확인</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+<div class="pop_layer full shop_pop" id="shopPopup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>LG유플러스 상암동 누리꿈점</h3>
+        </div>
+        <div class="pop_content">
+
+            <div class="section pop_l">
+                <div class="section">
+                    <div class="swiper shop_view">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_shop.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_shop.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="../../resource/images/data/img_shop.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div> <!-- // section -->
+                <div class="section">
+                    <dl class="shop_work">
+                        <dt>알뜰폰 전용 매장에서는,</dt>
+                        <dd>USIM/eSIM 개통이 가능해요!</dd>
+                        <dd>알뜰폰 관련 CS 상담이 가능해요!</dd>
+                        <dd>선불요금제 개통도 할 수 있어요!</dd>
+                    </dl>
+                </div> <!-- // section -->
+            </div> <!-- // section pop_l -->
+
+            <div class="section pop_r">
+                <div class="section">
+                    <div class="table_ty02">
+                        <table>
+                            <caption>매장정보</caption>
+                            <colgroup>
+                                <col style="width:35%">
+                                <col style="width:auto">
+                            </colgroup>
+                            <thead class="blind">
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span class="th_ico">주소</span></th>
+                                    <td>서울 마포구 월드컵북로 396, 100호(상암동 1605,누리꿈스퀘어 1F)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="th_ico">전화번호</span></th>
+                                    <td>070-358-3515</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="th_ico">영업시간</span></th>
+                                    <td>
+                                        <dl>
+                                            <dt><b>평일</b></dt>
+                                            <dd>오전 10:00 ~ 오후 08:00</dd>
+                                            <dt><b>토요일</b></dt>
+                                            <dd>오전 10:00 ~ 오후 08:00</dd>
+                                            <dt><b>일요일</b></dt>
+                                            <dd>오전 10:00 ~ 오후 08:00</dd>
+                                            <dt><b>공휴일</b></dt>
+                                            <dd>오전 10:00 ~ 오후 08:00</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="th_ico">매장 휴무일</span></th>
+                                    <td>일요일 휴무, 명절 당일</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> <!-- // section -->
+                <div class="section">
+                    <div class="group_btn">
+                        <a href="javascript:void(0);" class="btn_sM_c03">매장 방문 예약하기</a>
+                    </div>
+                    <div class="text_info">매장 방문예약은 네이버 플레이스를 통해 쉽고 빠르게 할 수 있어요.</div>
+                </div> <!-- // section -->
+            </div> <!-- // section pop_r -->
+
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+            
+<script>
+    // sample
+
+    $(function(){
+
+        // 위치정보 활용 동의
+        // popUp.open('#termsPopup01', '');
+
+
+        // shop_area
+        
+        $(document).on('click', '.shop_check .but button', function(){
+            if($(this).hasClass('all')) {
+                if($(this).hasClass('on')) {
+                    $(this).removeClass('on').siblings().removeClass('on');
+                } else {
+                    $(this).addClass('on').siblings().addClass('on');
+                }
+            } else {
+                if($(this).hasClass('on')) {
+                    $(this).removeClass('on');
+                    $(this).siblings('.all').removeClass('on');
+                } else {
+                    $(this).addClass('on');
+
+                    var _all = $(this).siblings().not('.all').length;
+                    var _on = $(this).siblings('.on').length;
+
+                    if(_all == _on) $(this).siblings('.all').addClass('on');
+                }
+            }
+        });
+
+        // tooltip
+        $(document).on('click', '.shop_check .tip_more', function(){
+            if($(this).attr('aria-expanded') == 'false'){
+                $(this).attr('aria-expanded', true).addClass('on');
+                $('.shop_check .tip').slideDown();
+            } else {
+                $(this).attr('aria-expanded', false).removeClass('on');
+                $('.shop_check .tip').slideUp();
+            }
+        });
+        $(document).on('click', '.shop_check .tip button', function(){
+            $('.shop_check .tip_more').attr('aria-expanded', false).removeClass('on');
+            $('.shop_check .tip').slideUp();
+        });
+        
+        // 주변 방문 가능한 매장 touch
+        $(document).on('click', '.shop_list > button', function(){
+            if($(this).attr('aria-expanded') == 'false'){
+                $('.shop_list > button').attr('aria-expanded', true);
+                $('.shop_list > div').slideDown();
+            } else {
+                $('.shop_list > button').attr('aria-expanded', false);
+                $('.shop_list > div').slideUp();
+            }
+        });
+        
+        // 주변 방문 가능한 매장 touch
+        _touch.init();
+
+        // 매장 사진
+        var swiper = new Swiper(".shop_view", {
+            slidesPerView: 1,
+            spaceBetween: 17,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            observer: true,
+            observeParents: true,
+        });
+
+
+
+        // map pin
+        $(document).on('click', '.map_pin > a', function(){
+            $('.map_pin').each(function(){
+                var _src = $(this).find(' > a > img').attr('src');
+                $(this).removeClass('big').css('z-index', '');
+                $(this).find(' > a > img').attr('src', _src.replace('_big.png', '.png'));
+            });
+
+            var _src = $(this).find('img').attr('src');
+            $(this).parent('.map_pin').addClass('big').css('z-index', '2');
+            $(this).find('img').attr('src', _src.replace('.png', '_big.png'));
+        });
+
+        $(document).on('click', function(e){
+            if($(e.target).hasClass('map_area')) {
+                $('.map_pin').each(function(){
+                    var _src = $(this).find(' > a > img').attr('src');
+                    $(this).removeClass('big').css('z-index', '');
+                    $(this).find(' > a > img').attr('src', _src.replace('_big.png', '.png'));
+                });
+            }
+        });
+
+    });
+
+    // 위치정보 활용 동의
+    function termsCheck(){
+        if($('input#check_01').is(':checked') == true) {
+            popUp.close('#termsPopup01', '');
+        } else {
+            popUp.open('#alert01', '');
+        }
+    }
+
+    // 주변 방문 가능한 매장 touch
+    var _touch = {
+        startY : 0,
+        endY : 0,
+        init : function(){
+            _touch.touchStart();
+            _touch.touchEnd();
+        },
+        touchStart : function(){
+            $(window).on('touchstart', function(e){
+                const touch = e.originalEvent.changedTouches[0] || e.originalEvent.touches[0];
+                const y = touch.screenY;
+                _touch.startY = y;
+            });
+        },
+        touchEnd : function(){
+            $(window).on('touchend', function(e){
+                const target = e.target;
+                if( !_touch.isTarget($(target)) ) return;
+
+                const touch = e.originalEvent.changedTouches[0] || e.originalEvent.touches[0];
+                const y = touch.screenY;
+                _touch.endY = y;
+
+                if(_touch.startY - _touch.endY > 50){
+                    $('.shop_list > button').attr('aria-expanded', true);
+                    $('.shop_list > div').slideDown();
+                } else if(_touch.endY - _touch.startY > 50){
+                    $('.shop_list > button').attr('aria-expanded', false);
+                    $('.shop_list > div').slideUp();
+                }
+            });
+        },
+        isTarget : function(target){
+            // let result = (target.parents('.shop_list').length > 0) ? true : false;
+            let result = (target.is('.shop_list > button')) ? true : false;
+            return result;
+        }
+    }
+</script>
+
+</body>
+</html>

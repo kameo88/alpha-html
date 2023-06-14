@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">eSIM 정보 입력</h2>
+            </div>
+            <div class="h_right">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">eSIM 정보 입력</h2>
+            
+            <div class="page_info">
+                가지고 계신 eSIM 단말기의 <br>
+                정보(EID, IMEI1, IMEI2)를 <br>
+                입력해 주세요
+            </div>
+
+            <div class="section">
+                <div class="box_gray">
+                    <strong>정보(EID, IMEI1, IMEI2) 확인 방법</strong>
+                    <ul class="text_list_bull">
+                        <li>통화 키패드에서 [<span class="fc01">*#06#</span>] 입력하여 표시되는 화면을 캡처 <br><a href="javascript:void(0);" role="button" class="btn_sXS_c07 mgt8">자세히 보기</a></li>
+                    </ul>
+                </div>
+
+                <div class="group_btn mgt20">
+                    <label class="btn_sM_c03" for="imgUpload">캡처한 이미지 올리기</label>
+                    <input class="blind" type="file" id="imgUpload" name="imgUpload" accept="image/*">
+                </div>
+
+                <button type="button" class="text_btn">직접 입력하기</button>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="form_list">
+                    <ul>
+                        <li>
+                            <strong class="form_tit">EID</strong>
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="앞에서부터 숫자 32자리 입력" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">eSIM 정보를 다시 확인해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">IMEI 1</strong>
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="앞에서부터 숫자 14자리 입력" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">eSIM 정보를 다시 확인해주세요</div>
+                        </li>
+                        <li>
+                            <strong class="form_tit">IMEI 2</strong>
+                            <div class="form_item">
+                                <div class="input_box">
+                                    <input type="number" class="input" placeholder="앞에서부터 숫자 14자리 입력" disabled>
+                                    <button type="button" class="del_btn"><span class="blind">입력 내용 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="fali_m">eSIM 정보를 다시 확인해주세요</div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <div class="box_gray">
+                    <ul class="text_list_bull">
+                        <li>EID, IMEI 정보는 맨 마지막 자리를 제외한 숫자를 입력해주세요.</li>
+                        <li>입력한 단말정보가 불일치 할 경우 eSIM 개통이 되지 않습니다. 꼭 확인해주세요.</li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="bottom_float">
+                <div class="inner">
+                    <div class="float_btn_wrap">
+                        <div class="group_btn">
+                            <button type="button" class="btn_sL_c01" disabled>인증하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- // bottom_float -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    // sample
+
+    $(function(){
+
+        // 직접 입력하기 버튼 클릭 시 input box 활성화
+        $(document).on('click', '.text_btn', function(){
+            $("input[type=number]").removeAttr('disabled')
+        });
+    });
+</script>
+
+</body>
+</html>

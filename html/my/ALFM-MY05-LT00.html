@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">최근 둘러본 요금제</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">최근 둘러본 요금제</h2>
+
+            <div class="section">
+                <!-- 최근 둘러본 요금제 > 미로그인 시 -->
+                <div class="box_yellow">
+                    <div class="my_box">
+                        <p>
+                            최근 둘러본 요금제는 <span>10개</span>까지만 유지되며, <br>
+                            더 많은 요금제를 보고 싶다면 로그인 해 보세요!
+                        </p>
+                        <div class="group_btn">
+                            <a href="javascript:void(0);" role="button" class="btn_sS_c02">로그인</a>
+                            <a href="javascript:void(0);" role="button" class="btn_sS_c01">요금제 전체 보러가기</a>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <!-- 최근 둘러본 요금제 > 로그인 시 -->
+                <div class="box_yellow">
+                    <div class="my_box">
+                        <p>
+                            최근 둘러본 요금제는 <br>
+                            <span>최대 30일 이내 50개</span>까지 유지되며, <br>
+                            로그인 전 확인한 상품은 일부 제한될 수 있습니다
+                        </p>
+                        <a href="javascript:void(0);" role="button" class="btn_sS_c01">요금제 전체 보러가기</a>
+                    </div>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <button type="button" class="text_btn ty02">전체삭제하기</button>
+                <div class="item_list ty03">
+                    <ul>
+                        <li>
+                            <div class="plan_item">
+                                <div class="card_top">
+                                    <div class="partner">
+                                        <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                        <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                    </div>
+                                    <div class="beft">
+                                        <img src="../../resource/images/component/img_flag01.png" alt="특가">
+                                        <img src="../../resource/images/component/img_flag02.png" alt="+알파 only">
+                                    </div>
+                                </div>
+
+                                <div class="card_mid">
+                                    <span class="plan_tit">데이터안심15G+</span>
+                                    <strong class="plan_tit_sub">
+                                        월 11GB + 매일 2GB + 3Mbps
+                                        <span class="tooltip">
+                                            <button type="button"><span class="blind">요금제 툴팁</span></button>
+                                            <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                                        </span>
+                                    </strong>
+                                    <div class="plan_info">
+                                        <span class="phone"><span class="blind">통화량</span>100분</span>
+                                        <span class="message"><span class="blind">문자량</span>100건</span>
+                                        <span class="cellular"><span class="blind">통신기술</span>LTE</span>
+                                    </div>
+                                </div>
+
+                                <div class="combi">
+                                    <div class="combi_inner">
+                                        <strong>
+                                            <span class="tooltip">
+                                                <button type="button"><span class="blind">요금제 툴팁</span></button>
+                                                <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
+                                            </span>
+                                            <span class="fc01">결합하면</span> 월 10,890원
+                                        </strong>
+                                        <span class="period">6개월 이후 38,900원</span>
+                                    </div>
+                                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+
+                                    <div class="choice">22,521명이 선택했어요</div>
+                                </div>
+                                
+                                <div class="acdItem">
+                                    <div class="card_bot">
+                                        <div class="paln_badge">
+                                            <button type="button" class="bag_btn_c01 on"><span class="blind">찜하기</span>480</button>
+                                            <button type="button" class="bag_btn_c02 on">비교하기</button>
+                                        </div>
+
+                                        <div class="gift_box">
+                                            <div class="bag_list">
+                                                <ul>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts01.png" alt="스타벅스 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts03.png" alt="선물상자 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts04.png" alt="네이버페이 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts05.png" alt="데이터 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            +2
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+            
+                                            <div class="acc_box">
+                                                <button type="button" aria-expanded="false" class="acc_btn">사은품 최대 <span>3</span>개</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="region">
+                                        <ul class="acc_contents">
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts03.png" alt="선물상자 로고">
+                                                </div>
+                                                <span>일반 유심 무료 발송</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts04.png" alt="네이버페이 로고">
+                                                </div>
+                                                <span>네이버페이 5,000P 제공</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                </div>
+                                                <span>신세계상품권 10,000원권 증정</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts01.png" alt="스타벅스 로고">
+                                                </div>
+                                                <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                </div>
+                                                <span>신세계 상품권 1만원</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts05.png" alt="데이터 로고">
+                                                </div>
+                                                <span>NFC 유심 50% 할인</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" class="link_list">
+                                    <span class="blind">요금제 상세페이지 이동</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="plan_item">
+                                <div class="card_top">
+                                    <div class="partner">
+                                        <img src="../../resource/images/data/logo_s_partner06.png" alt="프리티">
+                                        <div class="star"><span class="blind">별점</span><span class="score">4.5</span></div>
+                                    </div>
+                                    <div class="beft">
+                                        <img src="../../resource/images/component/img_flag01.png" alt="특가">
+                                        <img src="../../resource/images/component/img_flag02.png" alt="+알파 only">
+                                    </div>
+                                </div>
+
+                                <div class="card_mid">
+                                    <span class="plan_tit">데이터안심15G+</span>
+                                    <strong class="plan_tit_sub">
+                                        월 11GB + 매일 2GB + 3Mbps
+                                        <span class="tooltip">
+                                            <button type="button"><span class="blind">요금제 툴팁</span></button>
+                                            <span class="info">데이터 소진 시 유튜브 화질 1080p로 원활히 볼 수 있어요</span>
+                                        </span>
+                                    </strong>
+                                    <div class="plan_info">
+                                        <span class="phone"><span class="blind">통화량</span>100분</span>
+                                        <span class="message"><span class="blind">문자량</span>100건</span>
+                                        <span class="cellular"><span class="blind">통신기술</span>LTE</span>
+                                    </div>
+                                </div>
+
+                                <div class="combi">
+                                    <div class="combi_inner">
+                                        <strong>
+                                            <span class="tooltip">
+                                                <button type="button"><span class="blind">요금제 툴팁</span></button>
+                                                <span class="info">LG U+ 인터넷/IPTV 신규 가입 + 알뜰폰 결합 시, 최대 118만원의 혜택을 받을 수 있어요!</span>
+                                            </span>
+                                            <span class="fc01">결합하면</span> 월 10,890원
+                                        </strong>
+                                        <span class="period">6개월 이후 38,900원</span>
+                                    </div>
+                                    <a href="javascript:void(0);" class="btn_sS_c02">자세히보기</a>
+
+                                    <div class="choice">22,521명이 선택했어요</div>
+                                </div>
+                                
+                                <div class="acdItem on">
+                                    <div class="card_bot">
+                                        <div class="paln_badge">
+                                            <button type="button" class="bag_btn_c01"><span class="blind">찜하기</span>480</button>
+                                            <button type="button" class="bag_btn_c02">비교하기</button>
+                                        </div>
+
+                                        <div class="gift_box">
+                                            <div class="bag_list">
+                                                <ul>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts01.png" alt="스타벅스 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts03.png" alt="선물상자 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts04.png" alt="네이버페이 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            <img src="../../resource/images/component/img_gifts05.png" alt="데이터 로고">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="bag_git">
+                                                            +2
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+            
+                                            <div class="acc_box">
+                                                <button type="button" aria-expanded="true" class="acc_btn">사은품 최대 <span>3</span>개</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="region" style="display: block;">
+                                        <ul class="acc_contents">
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts03.png" alt="선물상자 로고">
+                                                </div>
+                                                <span>일반 유심 무료 발송</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts04.png" alt="네이버페이 로고">
+                                                </div>
+                                                <span>네이버페이 5,000P 제공</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                </div>
+                                                <span>신세계상품권 10,000원권 증정</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts01.png" alt="스타벅스 로고">
+                                                </div>
+                                                <span>스타벅스 아메리카노 기프티콘 2잔 제공</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts02.png" alt="신세계 로고">
+                                                </div>
+                                                <span>신세계 상품권 1만원</span>
+                                            </li>
+                                            <li>
+                                                <div class="bag_git">
+                                                    <img src="../../resource/images/component/img_gifts05.png" alt="데이터 로고">
+                                                </div>
+                                                <span>NFC 유심 50% 할인</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0);" class="link_list">
+                                    <span class="blind">요금제 상세페이지 이동</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="group_btn">
+                        <a href="javascript:void(0);" role="button" class="btn_sM_c05">더볼래요</a>
+                    </div>
+                </div>
+                <div class="no_dt_his">
+                    <p>
+                        최근 둘러본 요금제가 없습니다
+                    </p>
+                </div>
+            </div><!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<script>
+    // sample
+
+    //찜하기, 비교하기
+    $(document).on('click', '.paln_badge > button', function(){
+        $(this).toggleClass("on");
+    });
+    
+    var swiper = new Swiper(".cardSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        observer: true,
+        observeParents: true,
+    });
+</script>
+
+</body>
+</html>

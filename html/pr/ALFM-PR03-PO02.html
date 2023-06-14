@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">휴대폰 정보 확인 방법</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">휴대폰 정보 확인 방법</h2>
+
+            <div class="section">
+                <button type="button" class="btn_sM_c03" id="btn_popup01" onclick="popUp.open('#popup01');">이미지 업로드 가이드</button>
+            </div>
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer full" id="popup01">
+    <div class="pop_wrap height_fix">
+        <div class="pop_header">
+            <h3>휴대폰 정보 확인 방법</h3>
+        </div>
+        <div class="pop_content">
+
+            <div class="section">
+                <div class="item_list02">
+                    <ul>
+                        <li>
+                            <div class="radio_ty00">
+                                <input type="radio" name="ty_list_01" id="ty_list_01_01" checked>
+                                <label for="ty_list_01_01">iOS</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio_ty00">
+                                <input type="radio" name="ty_list_01" id="ty_list_01_02">
+                                <label for="ty_list_01_02">Android</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div id="tabpanel_ty_list_01_01" style="display:block;">
+                    <div class="box_gray">
+                        <div class="guid_img_item ty02">
+    
+                            <strong>모델번호 확인 방법</strong>
+                            <ul class="text_list_bull">
+                                <li>휴대폰 설정 > 일반 > 정보 > 모델번호 확인 모델번호 숫자 영역을 “클릭”하여 확인</li>
+                            </ul>
+    
+                            <strong class="mgt20">일련번호 확인 방법</strong>
+                            <ul class="text_list_bull">
+                                <li>휴대폰 설정 > 일반 > 정보 > 일련번호 확인</li>
+                            </ul>
+    
+                            <div class="guid_img">
+                                <img src="../../resource/images/content/img_s_num_05.png" alt="모델번호 확인 방법">
+                            </div>
+                        </div>
+    
+                        <div class="next_arrow_bott">
+                            <img src="../../resource/images/ico/ico_arrowB03.png" alt="">
+                        </div>
+    
+                        <div class="guid_img_item ty02">
+                            <div class="guid_img">
+                                <img src="../../resource/images/content/img_s_num_06.png" alt="일련번호 확인 방법">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabpanel_ty_list_01_02" style="display:none;">
+                    <div class="box_gray">
+                        <div class="guid_img_item ty02">
+    
+                            <strong>휴대폰 정보 확인 방법(모델명/일련번호)</strong>
+                            <ul class="text_list_bull">
+                                <li>설정 > 휴대전화 정보 > 규제 정보 > 모델명, 일련번호 확인</li>
+                            </ul>
+
+                            <div class="guid_img">
+                                <img src="../../resource/images/content/img_s_num_07.png" alt="모델명/일련번호 확인 방법">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- // section -->
+        </div>
+        
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sM_c03" id="nextBtn">확인</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" id="btn_popup02" onclick="popUp.close('#popup01');"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    // sample
+
+    $(function(){
+        popUp.open('#popup01');
+
+        $(document).on('change', 'input[name=ty_list_01]', function(){
+            if($(this).is(':checked') == true) {
+                var $thisId = $(this).attr("id");
+
+                $("[id^=tabpanel_]").hide();
+                $("#tabpanel_" + $thisId).show();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

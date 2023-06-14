@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
+    <title>+알파</title>
+    <link rel="stylesheet" href="../../resource/css/style.css">
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../resource/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/js/pub-ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="header">
+        <div class="inner">
+            <div class="h_left">
+                <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">header</h2>
+            </div>
+            <div class="h_right">
+                <button type="button" class="h_rcmd"><span class="blind">친구추천</span></button>
+                <button type="button" class="h_menu"><span class="blind">전체메뉴 열기</span></button>
+                <button type="button" class="h_close"><span class="blind">닫기</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">PC 페이지 nav (class="title_nav")</h2>
+
+            <div class="page_info">페이지 안내 (class="page_info")</div>
+            
+            <div class="section">
+                <h3 class="tit02">title (class="tit02")</h3>
+                <h3 class="tit03">title (class="tit03")</h3>
+                <div class="tit_wrap">
+                    <h3 class="tit03">title (class="tit03")</h3>
+                    <a href="javascript:void(0);" class="more">더보기</a>
+                </div>
+                body (font-size:1.4rem; line-height:2rem; color:#222;)
+                <div class="share_box">
+                    <span>text</span>
+                    <button type="button" class="share_btn" id="btn_share" onclick="popUp.open('#sharePop', '#btn_share');"><span class="blind">공유하기</span></button>
+                </div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit02">text_list_bull</h3>
+                
+                <ul class="text_list_bull">
+                    <li>
+                        비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.
+                        <ul class="text_list_dash">
+                            <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                            <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                        </ul>
+                    </li>
+                    <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                </ul>
+
+                <ul class="text_list_bull">
+                    <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                    <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                </ul>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit02">text_list_dash</h3>
+                
+                <ul class="text_list_dash">
+                    <li>
+                        비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.
+                        <ul class="text_list_bull">
+                            <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                            <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                        </ul>
+                    </li>
+                    <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                </ul>
+
+                <ul class="text_list_dash">
+                    <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                    <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                </ul>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit02">text_info</h3>
+                
+                <div class="text_info">종료일 기준으로 최근 2개월간 지난 이벤트 조회가 가능합니다</div>
+            </div> <!-- // section -->
+
+            <div class="section">
+                <h3 class="tit02">box</h3>
+                
+                <div class="box_gray">
+                    <ul class="text_list_bull">
+                        <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                        <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="box_line">
+                    <ul class="text_list_bull">
+                        <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                        <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="box_red">
+                    <ul class="text_list_bull">
+                        <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                        <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="box_yellow">
+                    <ul class="text_list_bull">
+                        <li>비밀번호는 10~20자의 영문, 숫자 조합으로 생성해주세요.</li>
+                        <li>특수문자 중 &lt;>()#&`"/|?\공백은 사용할 수 없습니다.</li>
+                    </ul>
+                </div>
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+</div> <!-- // wrap -->
+
+<div class="pop_layer alert" id="sharePop">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>공유하기</h3>
+        </div>
+        <div class="pop_content">
+            <div class="cir_icon_link">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="facebook_icon_link"> <!-- onclick="popUp.close('#popup01', '#btn_popup01');" -->
+                            <span>페이스북</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="kakao_icon_link">
+                            <span>카카오톡</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="url_icon_link">
+                            <span>URL 복사</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sS_c02" data-action="close">닫기</button>
+            </div>
+        </div>
+    </div>
+</div> <!-- // pop_layer -->
+
+</body>
+</html>
