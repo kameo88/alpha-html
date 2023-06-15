@@ -28,13 +28,24 @@
 .main_bnr {margin-top:2rem;}
 .main_bnr a {display:block;}
 .main_bnr img {display:block; width:100%;}
-.swiper.main_bnr .swiper-horizontal > .swiper-pagination-bullets,
+/* .swiper.main_bnr .swiper-horizontal > .swiper-pagination-bullets,
 .swiper.main_bnr .swiper-pagination-bullets.swiper-pagination-horizontal {bottom:0.4rem; font-size:0; line-height:0;}
 .swiper.main_bnr .swiper-pagination-bullet {width:0.4rem; height:0.4rem; border-radius:0.2rem; background:#ddd; opacity:1;}
 .swiper.main_bnr .swiper-pagination-bullet-active {width:0.8rem; background:#717171;}
 .swiper.main_bnr .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper.main_bnr .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.4rem;}
-.swiper.swiper-initialized.main_bnr {padding-left:1.6rem; padding-right:1.6rem; margin-left:-1.6rem; margin-right:-1.6rem;}
+.swiper.swiper-initialized.main_bnr {padding-left:1.6rem; padding-right:1.6rem; margin-left:-1.6rem; margin-right:-1.6rem;} */
+.swiper-container .play_box {position:absolute; bottom:2rem; right:1.6rem; z-index:1; height:2rem; background:rgba(0,0,0,0.6); line-height:0; border-radius:2rem; padding:0 2.5rem 0 1.2rem;}
+.swiper-container .play_box .btn {width:20px; height:20px;}
+.swiper-container .play_box .swiper-pagination {position:relative; bottom:auto; width:auto; display:inline-block; line-height:1; color:#cccccc; font-size:0; line-height:0;}
+.swiper-container .play_box .swiper-pagination:after {display:inline-block; content:'-'; font-size:1.2rem; color:inherit; position: absolute; left:50%; top:50%; transform:translate(-50%, -50%)}
+.swiper-container .play_box .swiper-pagination > span {display:inline-block; line-height:2rem; font-size:1.2rem;}
+.swiper-container .play_box .swiper-pagination > span:first-of-type {padding-right:0.6rem; color:#fff;}
+.swiper-container .play_box .swiper-pagination > span:last-of-type {padding-left:0.6rem;}
+.swiper-container .play_box .btn {position:absolute; right:0; top:0; width:2rem; height:2rem; background:rgba(0,0,0,0.4); border:none; font-size:0; line-height:0; padding:0;}
+.swiper-container .play_box .btn:before {display:inline-block; content:''; width:1.6rem; height:1.6rem; background:url(../img/icon_play_set.png) no-repeat; background-size:100% auto;}
+.swiper-container .play_box .btn.btn_play_stop:before  {background-position:0 0;}
+.swiper-container .play_box .btn.btn_play_start:before  {background-position:0 -1.6rem;}
 
 .main_service {display:flex;}
 .main_service li {flex:1;}
