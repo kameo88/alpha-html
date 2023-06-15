@@ -29,11 +29,7 @@ html, body {height:100%;}
 /* *** loading *** */
 .loading {position:fixed; top:0; right:0; bottom:0; left:0; display:none; z-index:100;}
 .loading::before {content:''; position:absolute; top:0; right:0; bottom:0; left:0; background:rgba(0, 0, 0, .4);}
-.loading::after {content:''; position:absolute; top:50%; left:50%; display:block; width:6.4rem; height:6.4rem; margin:-3.2rem 0 0 -3.2rem; background:url(../images/layout/loading.png) no-repeat; background-size:100% auto; animation:loading 1s infinite;}
-@keyframes loading{
-    from{transform:rotate(0deg)}
-    to{transform:rotate(360deg)}
-}
+.loading lottie-player {position:absolute; left:50%; top:50%; display:block; width:3.2rem; height:3.2rem; margin:-1.6rem 0 0 -1.6rem;}
 
 
 
