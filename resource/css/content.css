@@ -487,9 +487,7 @@
 
 /* 가입신청 완료 */
 .mypl_char.ty02{margin-top:3.4rem;padding-bottom:39rem;}
-.mypl_char.ty02::after{position:absolute; top:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:32.7rem;}
-.mypl_char.ty02::after{background:url(../images/content/img_join_complete.png) no-repeat center/100%;}
-
+.mypl_char.ty02 lottie-player {position:absolute; top:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:32.7rem;}
 
 
 
