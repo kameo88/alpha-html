@@ -405,17 +405,26 @@
 
 
 /* *** 내게 맞는 요금제 찾기 *** */
-.mypl_fin,
-.mypl_char{position:relative; padding-bottom:29.7rem; margin-top:9.2rem;}
-.mypl_fin::after,
-.mypl_char::after,
-[class*="usage_"]::after{position:absolute; bottom:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:29.7rem;}
-.mypl_fin::after {background:url(../images/content/img_my_plan02.png) no-repeat center/100%;}
-.mypl_char::after{background:url(../images/content/img_my_plan01.png) no-repeat center/100%;}
 
-.usage_result::after{background:url(../images/content/img_my_plan03.png) no-repeat center/100%; width:24rem; height:20rem;}
-.usage_no::after{content: ""; display: inline-block; background:url(../images/content/img_my_plan04.png) no-repeat center/100%; width:24rem; height:20rem;}
-[class*="usage_"]{position:relative; max-width:30rem; margin:2rem auto 2.8rem; padding-bottom:23.2rem;}
+
+[class*="usage_"]::after{position:absolute; bottom:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:29.7rem;}
+.mypl_fin lottie-player,
+.mypl_char lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%);}
+.mypl_fin{position:relative; padding-bottom:15.7rem; margin-top:10.5rem;}
+.mypl_fin lottie-player{width:23.2rem; height:16rem;}
+.mypl_char{position:relative; padding-bottom:29.7rem; margin-top:4.5rem}
+.mypl_char lottie-player{width:24rem; height:36rem;}
+
+.usage_result {padding-bottom:19.4rem;}
+.usage_result lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:23.2rem; height:16rem;}
+.usage_result::after{display:none;}
+
+.usage_no {padding-bottom:22.4rem;}
+.usage_no lottie-player{position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:24rem; height:20rem;}
+.usage_no::after{display:none;}
+
+
+[class*="usage_"]{position:relative; max-width:30rem; margin:2rem auto 2.8rem;}
 [class*="usage_"] [class*="speech_"]{position:relative; font-size:1.4rem; display:inline-block; line-height:2rem; color:#fff; max-width:23rem; border-radius:1.2rem; padding:1.2rem 2rem;}
 [class*="usage_"] [class*="speech_"]::after{content:""; position:absolute; bottom:-0.5rem; left:50%; display:inline-block; height:0; width:0; border-top:5px solid #000; border-left:4px solid transparent; border-right:4px solid transparent; transform:translateX(-50%);}
 
@@ -486,8 +495,11 @@
 .guid_img_item.ty02:first-child .guid_img {margin-top:3.2rem}
 
 /* 가입신청 완료 */
-.mypl_char.ty02{margin-top:3.4rem;padding-bottom:39rem;}
-.mypl_char.ty02 lottie-player {position:absolute; top:0; left:50%; transform:translateX(-50%); content:""; display:inline-block; width:23.2rem; height:32.7rem;}
+
+.mypl_char.ty02{margin-top:11.1rem;padding-bottom:25rem;}
+.mypl_char.ty02::after{display:none;}
+.mypl_char.ty02 lottie-player {position:absolute; top:0; left:50%; transform:translateX(-50%); width:23.6rem; height:21.1rem;}
+
 
 
 
@@ -849,6 +861,10 @@
 .eval_list .eval_item .tit02{margin-bottom:2rem;}
 .eval_list .eval_item [class*="desc_s"]{font-size:1.3rem; color:#909090; display:none;}
 
+
+/* 회원가입 완료 */
+.join_char{margin-top:10rem;}
+.join_char lottie-player{width:27rem; height:22rem; margin:0 auto}
 
 
 
