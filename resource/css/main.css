@@ -11,7 +11,7 @@
 .content.main .tit_wrap [class^=tit] {margin-bottom:0;}
 .content.main .tit_wrap .more {margin-bottom:0.5rem;}
 
-.main_top {padding:6.4rem 1.6rem 1.2rem; background-color:#f1f3f4;}
+.main_top {padding:6.4rem 1.6rem 2.4rem; background-color:#f1f3f4;}
 
 .main_top .link_plan {position:relative; display:block; padding:5.2rem 3.2rem 11.4rem; border-radius:1.6rem; background-color:#fff;}
 .main_top .link_plan strong {display:block; font-size:3rem; font-weight:bold; line-height:4rem; color:#000;}
@@ -35,7 +35,7 @@
 .swiper.main_bnr .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper.main_bnr .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.4rem;}
 .swiper.swiper-initialized.main_bnr {padding-left:1.6rem; padding-right:1.6rem; margin-left:-1.6rem; margin-right:-1.6rem;} */
-.swiper-container .play_box {position:absolute; bottom:2rem; right:1.6rem; z-index:1; height:2rem; background:rgba(0,0,0,0.6); line-height:0; border-radius:2rem; padding:0 2.5rem 0 1.2rem;}
+.swiper-container .play_box {position:absolute; bottom:2rem; right:1.6rem; z-index:1; height:2rem; background:rgba(0,0,0,0.6); line-height:0; border-radius:2rem; padding:0 2.5rem 0 1.2rem; margin-top:1rem;}
 .swiper-container .play_box .btn {width:20px; height:20px;}
 .swiper-container .play_box .swiper-pagination {position:relative; bottom:auto; width:auto; display:inline-block; line-height:1; color:#cccccc; font-size:0; line-height:0;}
 .swiper-container .play_box .swiper-pagination:after {display:inline-block; content:'-'; font-size:1.2rem; color:inherit; position: absolute; left:50%; top:50%; transform:translate(-50%, -50%)}
@@ -46,6 +46,14 @@
 .swiper-container .play_box .btn:before {display:inline-block; content:''; width:1.6rem; height:1.6rem; background:url(../img/icon_play_set.png) no-repeat; background-size:100% auto;}
 .swiper-container .play_box .btn.btn_play_stop:before  {background-position:0 0;}
 .swiper-container .play_box .btn.btn_play_start:before  {background-position:0 -1.6rem;}
+
+.play_box {margin-top:1rem;}
+.play_box .swiper-pagination-fraction{bottom:-1%; width:auto; font-size:1.1rem; color:#bbb; padding-left:14.7%}
+.play_box .swiper-pagination-current{color:#717171;}
+.play_box .play_start,
+.play_box .play_stop{position:absolute; bottom:0%; left:6%; width:2rem; height:2rem; z-index:11; background:no-repeat center / 100% auto;}
+.play_box .play_start{background-image:url(../../resource/images/ico/ico_play.png);}
+.play_box .play_stop{background-image :url(../../resource/images/ico/ico_stop.png);}
 
 .main_service {display:flex;}
 .main_service li {flex:1;}
