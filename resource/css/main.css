@@ -48,7 +48,7 @@
 .swiper-container .play_box .btn.btn_play_start:before  {background-position:0 -1.6rem;}
 
 .play_box {margin-top:1rem;}
-.play_box .swiper-pagination-fraction{bottom:-1%; width:auto; font-size:1.1rem; color:#bbb; padding-left:14.7%}
+.play_box .swiper-pagination-fraction{bottom:0; width:auto; font-size:1.1rem; color:#bbb; padding-left:calc(6% + 2.8rem);}
 .play_box .swiper-pagination-current{color:#717171;}
 .play_box .play_start,
 .play_box .play_stop{position:absolute; bottom:0%; left:6%; width:2rem; height:2rem; z-index:11; background:no-repeat center / 100% auto;}
@@ -123,3 +123,5 @@
 
 .pc .main_partner > ol .partner strong {font-size:1.9rem; line-height:2.6rem;}
 .pc .main_partner > ol p {font-size:1.3rem; line-height:1.9rem;}
+
+.pc .main_top .link_plan i {width:20.5rem; height:13.5rem;}
