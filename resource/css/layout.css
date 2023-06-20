@@ -233,8 +233,8 @@ html, body {height:100%;}
 .pop_layer.notice .swiper img {display:block; width:100%;}
 .pop_layer.notice .swiper .swiper-horizontal > .swiper-pagination-bullets,
 .pop_layer.notice .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {bottom:2rem; font-size:0; line-height:0;}
-.pop_layer.notice .swiper .swiper-pagination-bullet {width:0.4rem; height:0.4rem; border-radius:0.2rem; background:#000; opacity:0.4;}
-.pop_layer.notice .swiper .swiper-pagination-bullet-active {width:0.8rem; background:#000;}
+.pop_layer.notice .swiper .swiper-pagination-bullet {width:0.4rem; height:0.4rem; border-radius:0.2rem; background:#fff; opacity:0.4;}
+.pop_layer.notice .swiper .swiper-pagination-bullet-active {width:0.8rem; background:#fff;}
 .pop_layer.notice .swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .pop_layer.notice .swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 0.4rem;}
 
