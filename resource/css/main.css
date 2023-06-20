@@ -25,7 +25,7 @@
 .main_top .link_ranking {position:relative; display:block; padding:2.7rem 4.4rem 2.7rem 3.2rem; margin-top:1.2rem; border-radius:1.6rem; background-color:#fff; font-size:1.9rem; font-weight:bold; line-height:2.6rem; color:#000;}
 .main_top .link_ranking::after {content:''; position:absolute; top:50%; right:2rem; display:block; width:2.4rem; height:2.4rem; background:url(../images/ico/ico_arrowR02.png) no-repeat center / 100% auto; transform:translateY(-50%);}
 
-.main_bnr {margin-top:1rem;}
+.main_bnr {margin-top:0.8rem;}
 .main_bnr a {display:block;}
 .main_bnr img {display:block; width:100%;}
 /* .swiper.main_bnr .swiper-horizontal > .swiper-pagination-bullets,
