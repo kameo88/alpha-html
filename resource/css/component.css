@@ -299,6 +299,36 @@ tr:nth-child(4) .th_ico::before{background-image:url(../images/ico/ico_cale.png)
 
 
 
+/* 0621 */
+/* ***** dl dt dd info list ***** */
+.list_info_ty01{font-size:1.3rem; color:#000; text-align:left; line-height:1.9rem; padding:1rem 0; border-top:1px solid #000; border-bottom:1px solid #ddd;}
+.list_info_ty01 > dl{display:flex; justify-content:space-between; flex-wrap:wrap;}
+.list_info_ty01 > dl.wid_full{display:initial;}
+.list_info_ty01 > dl.wid_full > dt{width:100%;}
+.list_info_ty01 > dl > dt,
+.list_info_ty01 > dl > dd{padding:1rem 0.8rem;}
+.list_info_ty01 > dl > dd{width:70%;}
+.list_info_ty01 > dl > dt{color:#717171; width: 30%;}
+.list_info_ty01 .ann_fee{font-size:1.6rem; text-align:right;}
+                    
+.list_info_ty02{font-size:1.3rem; color:#000; line-height:1.9rem; border-top:1px solid #000; border-bottom:1px solid #ddd;}
+.list_info_ty02 .th_ico {position:relative; padding:2rem 0.8rem 2rem 2rem;}
+.list_info_ty02 > dl:nth-child(1) .th_ico::before {background-image:url(../images/ico/ico_loca.png);}
+.list_info_ty02 > dl:nth-child(2) .th_ico::before {background-image:url(../images/ico/ico_phone.png);}
+.list_info_ty02 > dl:nth-child(3) .th_ico::before {background-image:url(../images/ico/ico_clock.png);}
+.list_info_ty02 > dl:nth-child(4) .th_ico::before {background-image:url(../images/ico/ico_cale.png);}
+.list_info_ty02 .th_ico::before {content:""; position:absolute; left:0; top:2rem; width:1.6rem; height:1.6rem; background:no-repeat center/1.6rem;}
+.list_info_ty02 > dl{display:flex; justify-content:space-between; flex-wrap:wrap;}
+.list_info_ty02 > dl > dt,
+.list_info_ty02 > dl > dd{padding:2rem 0.8rem; border-bottom:1px solid #ddd;}
+.list_info_ty02 > dl > dd{width:65%;}
+.list_info_ty02 > dl > dt{color:#717171; width:35%;}
+.list_info_ty02 > dl > dd b{color:#909090;}
+
+
+
+
+
 
 /* ***** button ***** */
 [class^=btn_] {display:inline-block; border:0.1rem solid; border-radius:0.8rem; text-align:center;}

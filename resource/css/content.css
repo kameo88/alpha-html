@@ -582,6 +582,7 @@
 /* 제휴카드 안내 */
 .asso{text-align:center; margin-top:2rem;}
 .asso [class^="table_"],
+.asso .list_info_ty01,
 .asso .flowSwiper{margin-top:2rem;}
 .asso .text_list_bull, 
 .asso .text_info,
