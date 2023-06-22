@@ -4,10 +4,10 @@
 * import
 */
 
-@import url(./reset.css);
+/* @import url(./reset.css); */
 @import url(./jquery-ui.css);
 @import url(./swiper-bundle.css);
-@import url(./layout.css);
+/* @import url(./layout.css); */
 @import url(./component.css);
 @import url(./common.css);
 @import url(./content.css);
