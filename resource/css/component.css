@@ -200,7 +200,7 @@ input[type="checkbox"] + label {cursor:pointer;}
 
 .terms_consent .cst_box {display:flex; justify-content:space-between; align-items:center; padding:2rem; border-radius:1.2rem; background:#f8f8f8;}
 .terms_consent .cst_box button {position:relative; flex:none; width:2.4rem; height:2.4rem; margin:-0.8rem -0.4rem -0.8rem 1rem;}
-.terms_consent .cst_box button::before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../images/ico/ico_arrowR02.png) no-repeat center/ 100% auto;}
+.terms_consent .cst_box button::before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:url(../images/ico/ico_arrowR.png) no-repeat center/ 1.6rem 1.6rem;}
 
 .terms_consent .cst_box + .cst_list {margin-top:3.2rem;}
 .terms_consent .cst_list {padding:0 2rem;}
