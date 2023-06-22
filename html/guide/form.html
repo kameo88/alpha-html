@@ -637,7 +637,7 @@
                         <label for="check_all02"><b>전체 약관에 모두 동의합니다.</b></label>
                     </div>
 
-                    <div class="cst_list">
+                    <div class="cst_list list01">
                         <div class="cst_panel">
                             <ul>
                                 <li>
@@ -674,7 +674,7 @@
                         <label for="check_all03"><b>전체 약관에 모두 동의합니다.</b></label>
                     </div>
 
-                    <div class="cst_list acdItem_wrap tog">
+                    <div class="cst_list list02 acdItem_wrap tog">
                         <div class="cst_acd acdItem">
                             <div class="cst_tab">
                                 <div class="check_st">
@@ -1011,7 +1011,7 @@
                 $(this).closest('.terms_consent').find('.cst_list input[type=checkbox]').prop('checked' , false);
             }
         });
-        $(document).on('change', '.cst_list input[type=checkbox]', function(){
+        $(document).on('change', '.list01 input[type=checkbox]', function(){
             var allL = $(this).closest('.cst_list').find('input[type=checkbox]').length;
             var cheL = $(this).closest('.cst_list').find('input[type=checkbox]:checked').length;
 
@@ -1051,7 +1051,7 @@
             }
         });
 
-        $(document).on('change', '.cst_list input[type=checkbox]', function(){
+        $(document).on('change', '.list02 input[type=checkbox]', function(){
             var allL = $(this).closest('.cst_list').find('input[type=checkbox]').length;
             var cheL = $(this).closest('.cst_list').find('input[type=checkbox]:checked').length;
 
