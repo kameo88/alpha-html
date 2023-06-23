@@ -153,6 +153,13 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
                 </div>
 
             </div> <!-- // section -->
@@ -232,6 +239,13 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
                 </div>
 
             </div> <!-- // section -->
@@ -1228,8 +1242,28 @@
             var swiper = new Swiper(".cardSwiper", {
                 slidesPerView: "auto",
                 spaceBetween: 12,
+                grabCursor: true,
                 observer: true,
                 observeParents: true,
+            });
+
+            function cardLength(){
+                if($('html').hasClass("pc") == true){
+                        var swiper = new Swiper(".cardSwiper", {
+                        slidesPerView: "auto",
+                        spaceBetween: 12,
+                        observer: true,
+                        observeParents: true,
+                        navigation: {
+                            nextEl: ('.swiper-button-next'),
+                            prevEl: ('.swiper-button-prev'),
+                        },
+                    });
+                    
+                }
+            }
+            $(function(){
+                cardLength();
             });
         }
 

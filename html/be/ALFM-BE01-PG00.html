@@ -109,6 +109,13 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
                 </div>
             </div> <!-- // section -->
             
@@ -185,6 +192,13 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
                 </div>
             </div> <!-- // section -->
 
@@ -256,7 +270,59 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="link_list">
+                                <div class="thum_item insta_thum">
+                                    <div class="thum_img">
+                                        <img src="../../resource/images/data/img_card_thum10.png" alt="인스타그램 썸네일">
+                                    </div>
+                                    <div class="thum_con">
+                                        <ul class="sns_post">
+                                            <li>@aiden_group</li>
+                                            <li>2023.02.02</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="link_list">
+                                <div class="thum_item insta_thum">
+                                    <div class="thum_img">
+                                        <img src="../../resource/images/data/img_card_thum10.png" alt="인스타그램 썸네일">
+                                    </div>
+                                    <div class="thum_con">
+                                        <ul class="sns_post">
+                                            <li>@aiden_group</li>
+                                            <li>2023.02.02</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="link_list">
+                                <div class="thum_item insta_thum">
+                                    <div class="thum_img">
+                                        <img src="../../resource/images/data/img_card_thum10.png" alt="인스타그램 썸네일">
+                                    </div>
+                                    <div class="thum_con">
+                                        <ul class="sns_post">
+                                            <li>@aiden_group</li>
+                                            <li>2023.02.02</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+
+                    <!-- swiper_control -->
+                    <div class="card_swiper_control">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- //swiper_control -->
                 </div>
             </div> <!-- // section -->
         </div> <!-- // content -->
@@ -267,8 +333,28 @@
     var swiper = new Swiper(".cardSwiper", {
         slidesPerView: "auto",
         spaceBetween: 12,
+        grabCursor: true,
         observer: true,
         observeParents: true,
+    });
+
+    function cardLength(){
+        if($('html').hasClass("pc") == true){
+                var swiper = new Swiper(".cardSwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 12,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: ('.swiper-button-next'),
+                    prevEl: ('.swiper-button-prev'),
+                },
+            });
+            
+        }
+    }
+    $(function(){
+        cardLength();
     });
 </script>
 </body>

@@ -642,7 +642,7 @@
                     </div>
 
                     <!-- swiper_control -->
-                    <div class="swiper_control">
+                    <div class="card_swiper_control">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
@@ -696,19 +696,6 @@
     </div> <!-- // container -->
 
 </div> <!-- // wrap -->
-
-
-<style>
-    /*  0622 임시적용  */
-    .mobile .swiper_control{display:none;}
-    .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{display:none;}
-    .swiper-button-next{right:0; top:10%; height:100%; width:8%;}
-    .swiper-button-prev{left:0; top:10%; height:100%; width:8%;}
-    .swiper-button-next:before,
-    .swiper-button-prev:before{position:absolute;width:100%; height:100%; content: "";}
-    .swiper-button-next:before {background:linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgb(255, 255, 255) 60%);}
-    .swiper-button-prev:before {background:linear-gradient(to left, rgba(255, 255, 255, 0) 20%, rgb(255, 255, 255) 60%);}
-</style>
 <script>
     // sample
 
@@ -716,7 +703,8 @@
     $(document).on('click', '.paln_badge > button', function(){
         $(this).toggleClass("on");
     });
-    
+
+
     var swiper = new Swiper(".cardSwiper", {
         slidesPerView: "auto",
         spaceBetween: 12,
@@ -725,8 +713,6 @@
         observeParents: true,
     });
 
-
-    //0622 임시적용 :: 카드배너 navi button
     function cardLength(){
         if($('html').hasClass("pc") == true){
                 var swiper = new Swiper(".cardSwiper", {
