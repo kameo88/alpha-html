@@ -69,6 +69,7 @@
 .card_swiper_control .swiper-button-prev:before {background:#fff;}
 .pc .cardSwiper .swiper-slide-active:not(:first-child):not(:nth-last-child(2)){margin-left:4rem;}
 .pc .cardSwiper.ty03 .swiper-slide-active:not(:first-child):not(:nth-last-child(4)){margin-left:4rem;}
+.pc .cardSwiper.ty04 .swiper-slide-active:not(:first-child):not(:nth-last-child(2)){margin-left:0;}
 
 
 
