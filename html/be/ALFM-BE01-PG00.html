@@ -330,32 +330,37 @@
 
 </div> <!-- // wrap -->
 <script>
-    var swiper = new Swiper(".cardSwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 12,
-        grabCursor: true,
-        observer: true,
-        observeParents: true,
-    });
+    // var swiper = new Swiper(".cardSwiper", {
+    //     slidesPerView: "auto",
+    //     spaceBetween: 12,
+    //     grabCursor: true,
+    //     observer: true,
+    //     observeParents: true,
+    // });
 
-    function cardLength(){
-        if($('html').hasClass("pc") == true){
-                var swiper = new Swiper(".cardSwiper", {
-                slidesPerView: "auto",
-                spaceBetween: 12,
-                observer: true,
-                observeParents: true,
-                navigation: {
-                    nextEl: ('.swiper-button-next'),
-                    prevEl: ('.swiper-button-prev'),
-                },
-            });
+    // function cardLength(){
+    //     if($('html').hasClass("pc") == true){
+    //             var swiper = new Swiper(".cardSwiper", {
+    //             slidesPerView: "auto",
+    //             spaceBetween: 12,
+    //             observer: true,
+    //             observeParents: true,
+    //             navigation: {
+    //                 nextEl: ('.swiper-button-next'),
+    //                 prevEl: ('.swiper-button-prev'),
+    //             },
+    //             on: {
+    //                 slideChange:function(a){
+    //                     ( a.activeIndex != 0 ) ? $(a.$el[0]).addClass("activeIndex") : $(a.$el[0]).removeClass("activeIndex");
+    //                 }
+    //             }
+    //         });
             
-        }
-    }
-    $(function(){
-        cardLength();
-    });
+    //     }
+    // }
+    // $(function(){
+    //     cardLength();
+    // });
 </script>
 </body>
 </html>
