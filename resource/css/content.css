@@ -40,8 +40,8 @@
 .cardSwiper .swiper-slide {max-width:24rem; height:auto; border-radius:1.2rem; background-color:#fff; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08); overflow:hidden;}
 .cardSwiper .swiper-slide > * {height:100%;}
 
-.cardSwiper.ty02 .swiper-slide {max-width:28rem;}
-.cardSwiper.ty03 .swiper-slide {max-width:15.3rem;}
+.cardSwiper.ty02 .swiper-slide {max-width:28rem; box-shadow:none;}
+.cardSwiper.ty03 .swiper-slide {max-width:15.3rem; box-shadow:none;}
 
 .flowSwiper.swiper {margin-left:-1.6rem; margin-right:-1.6rem;}
 .flowSwiper .swiper-wrapper {transition-timing-function:linear;}
@@ -64,7 +64,7 @@
 .card_swiper_control .swiper-button-prev.swiper-button-disabled,
 .card_swiper_control .swiper-button-next.swiper-button-disabled{display:none;}
 .card_swiper_control .swiper-button-next,
-.card_swiper_control .swiper-button-prev {top:2.2rem; width:4rem; height:100%; background:linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
+.card_swiper_control .swiper-button-prev {top:1.6rem; width:4rem; height:calc(100% - 3.2rem); margin:0; background:linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
 .card_swiper_control .swiper-button-next{right:0;}
 .card_swiper_control .swiper-button-prev{left:0; background:linear-gradient(270deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
 .card_swiper_control .swiper-button-prev:after,

@@ -744,7 +744,7 @@ var popUp = {
 }
 
 const cardSwiper = function(){
-    console.log('cardSwiper');
+    // console.log('cardSwiper');
 
     var swiper = new Swiper(".cardSwiper", {
         slidesPerView: "auto",
@@ -773,10 +773,10 @@ const cardSwiper = function(){
                         const Translate = a.translate;
                         const gap = 20;
 
-                        console.log( a, swiperW + Translate - gap,  wrapW, swiperW, Translate, gap, ( swiperW + Translate - gap > wrapW ));
+                        // console.log( a, swiperW + Translate - gap,  wrapW, swiperW, Translate, gap, ( swiperW + Translate - gap > wrapW ));
 
                         if( swiperW + Translate - gap > wrapW ){
-                            console.log('gg');
+                            // console.log('gg');
                             ( a.activeIndex != 0 ) ? $(a.$el[0]).addClass("activeIndex") : $(a.$el[0]).removeClass("activeIndex");
                         }
                     }
@@ -785,8 +785,7 @@ const cardSwiper = function(){
             
         }
     }
-    $(function(){
-        cardLength();
-    });
+    
+    cardLength();
 
 }
