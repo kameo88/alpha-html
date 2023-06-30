@@ -753,51 +753,36 @@ const cardSwiper = function(){
     //     observer: true,
     //     observeParents: true,
     // });
-
-    function cardLength(){
-        // if($('html').hasClass("pc") == true){
-            var swiper = new Swiper(".cardSwiper", {
-                slidesPerView: "auto",
-                spaceBetween: 12,
-                grabCursor: true,
-                observer: true,
-                observeParents: true,
-                navigation: {
-                    nextEl: ('.swiper-button-next'),
-                    prevEl: ('.swiper-button-prev'),
-                },
-                on: {
-                    slideChange	:function(a){
-
-                        if( $(a.$el).hasClass("ty04") || !$('html').hasClass("pc") ) return;
-
-                        const wrapW = a.width;
-
-                        const swiperW = a.virtualSize;
-                        const Translate = a.translate;
-                        const gap = 20;
-
-                        // console.log( a, swiperW + Translate - gap,  wrapW, swiperW, Translate, gap, ( swiperW + Translate - gap > wrapW ));
-
-                        if( swiperW + Translate - gap > wrapW ){
-                            // console.log('gg');
-                            ( a.activeIndex != 0 ) ? $(a.$el[0]).addClass("activeIndex") : $(a.$el[0]).removeClass("activeIndex");
-                        }
-                    }
-                }
-            });
-            
-        // } else {
-        //     var swiper = new Swiper(".cardSwiper", {
-        //         slidesPerView: "auto",
-        //         spaceBetween: 12,
-        //         grabCursor: true,
-        //         observer: true,
-        //         observeParents: true,
-        //     });
-        // }
-    }
     
-    cardLength();
+    var swiper = new Swiper(".cardSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        grabCursor: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: ('.swiper-button-next'),
+            prevEl: ('.swiper-button-prev'),
+        },
+        on: {
+            slideChange	:function(a){
+
+                if( $(a.$el).hasClass("ty04") || !$('html').hasClass("pc") ) return;
+
+                const wrapW = a.width;
+
+                const swiperW = a.virtualSize;
+                const Translate = a.translate;
+                const gap = 20;
+
+                // console.log( a, swiperW + Translate - gap,  wrapW, swiperW, Translate, gap, ( swiperW + Translate - gap > wrapW ));
+
+                if( swiperW + Translate - gap > wrapW ){
+                    // console.log('gg');
+                    ( a.activeIndex != 0 ) ? $(a.$el[0]).addClass("activeIndex") : $(a.$el[0]).removeClass("activeIndex");
+                }
+            }
+        }
+    });
 
 }

@@ -68,7 +68,7 @@
 .card_swiper_control .swiper-button-next{right:0;}
 .card_swiper_control .swiper-button-prev{left:0; background:linear-gradient(270deg, rgba(255, 255, 255, 0) 5%, #fff 60%);}
 .card_swiper_control .swiper-button-prev:after,
-.card_swiper_control .swiper-button-next:after{position:absolute; top:50%; margin-top:-1.6rem; width:3.2rem; height:3.2rem; border-radius:3.2rem; background:url(../images/ico/ico_swiperR.svg) center center no-repeat #fff; background-size:0.9rem auto; border:1px solid #ededed; box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.04); font-size:0.1px; color:transparent;}
+.card_swiper_control .swiper-button-next:after{position:absolute; top:50%; margin-top:-2.2rem; width:3.2rem; height:3.2rem; border-radius:3.2rem; background:url(../images/ico/ico_swiperR.svg) center center no-repeat #fff; background-size:0.9rem auto; border:1px solid #ededed; box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.04); font-size:0.1px; color:transparent;}
 .card_swiper_control .swiper-button-prev:after{left:0.4rem; transform:scaleX(-1);}
 .card_swiper_control .swiper-button-next:after{right:0.4rem;}
 
