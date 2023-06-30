@@ -174,6 +174,11 @@ var pubUi = {
                 $(this).attr('aria-expanded', true);
                 $(this).closest('li').find('[role=region]').slideDown();
                 $(this).closest('li').addClass('on');
+
+                // [06/30] toggle => accordion으로 수정
+                $(this).parents("li").siblings("li").removeClass("on");
+                $(this).parents("li").siblings("li").find("button").attr('aria-expanded', false);
+                $(this).parents("li").siblings("li").find("[role=region]").slideUp();
             }
         });
     }, // asideNav

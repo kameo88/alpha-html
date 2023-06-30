@@ -202,12 +202,19 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .header > .pc_header .nav {align-self:flex-start; min-width:56rem;}
 .header > .pc_header .nav > ul {display:flex; width:100%;}
 .header > .pc_header .nav > ul > li {flex:1; text-align:center;}
-.header > .pc_header .nav .menu_class {display:flex; justify-content:center; align-items:center; width:100%; height:9.6rem; font-size:1.6rem; font-weight:700; color:#000;}
+.header > .pc_header .nav .menu_class {position:relative; display:flex; justify-content:center; align-items:center; width:100%; height:9.6rem; font-size:1.6rem; font-weight:700; color:#000;}
+.header > .pc_header .nav .menu_class.on::after{content:''; position:absolute; left:50%; top:50%; transform:translate(-50%, calc(-50% + 1.4rem)); display:block; width:4.2rem; height:0.2rem; background:#fc6969;}
+.header > .pc_header .nav ul li:nth-child(1) .menu_class.on::after{width:5.6rem;}
+.header > .pc_header .nav ul li:nth-child(2) .menu_class.on::after{width:4.2rem;}
+.header > .pc_header .nav ul li:nth-child(3) .menu_class.on::after{width:2.8rem;}
+.header > .pc_header .nav ul li:nth-child(4) .menu_class.on::after{width:5.6rem;}
+
 .header > .pc_header .nav .sub_menu {display:none; margin-top:-2.5rem !important;}
 .header > .pc_header .nav .sub_menu ul li:last-child {padding-bottom:2.8rem;}
-.header > .pc_header .nav .sub_menu a {padding:1.2rem 0; font-size:1.4rem; line-height:1.6rem; color:#000;}
+.header > .pc_header .nav .sub_menu a {padding:1.2rem 0; font-size:1.4rem; line-height:1.6rem; color:#717171;}
 .header > .pc_header .nav .sub_menu a sup {display:inline-block; margin-top:-0.5rem;}
 .header > .pc_header .nav .sub_menu a.img_delivery {height:4rem; background:url(../images/layout/menu_delivery.png) no-repeat center / auto 1.6rem;}
+.header > .pc_header .nav .sub_menu li.on a{color:#fc6969; font-weight:700;}
 .header > .pc_header .header_menu {margin-left:auto;}
 .header > .pc_header .header_menu ul {display:flex; align-items:center; height:100%;}
 .header > .pc_header .header_menu ul li {position:relative;}
@@ -230,7 +237,7 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .aside .asd_top .asd_close {background-image:url(../images/layout/ico_close.png);}
 
 .aside .aside_header {flex:none; padding:0 2rem; margin-bottom:3.2rem;}
-.aside .aside_header .user {display:flex; justify-content:space-between; align-items:end; padding-top:3rem;}
+.aside .aside_header .user {display:flex; justify-content:space-between; align-items:end; padding:3rem 2rem 0;}
 .aside .aside_header .user .tit {font-size:1.8rem; line-height:2.6rem; color:#000;}
 .aside .aside_header .user .link_login {font-weight:700; color:#fc6969; text-decoration:underline;}
 .aside .aside_header .user .link_set {position:relative; display:inline-block; padding-right:2.4rem; font-weight:700;}
@@ -241,12 +248,14 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 
 .aside .aside_nav {flex:1 1 auto; padding:0 4rem; word-break:keep-all; word-wrap:break-word;}
 .aside .aside_nav a {display:block;}
-.aside .aside_nav > ul > li > button {position:relative; display:block; width:100%; padding:1.2rem 1.6rem 1.2rem 0; font-size:1.6rem; font-weight:700; line-height:2.3rem; color:#000; text-align:left;}
+.aside .aside_nav > ul > li > button {position:relative; display:block; width:100%; padding:1.2rem 1.6rem 1.2rem 0; font-size:1.6rem; line-height:2.3rem; color:#000; text-align:left;}
 .aside .aside_nav > ul > li > button::after {content:''; position:absolute;  top:50%; right:0; display:block; width:1.6rem; height:1.6rem; background:url(../images/layout/ico_p.png) no-repeat center / 100% auto; transform:translateY(-50%);}
+.aside .aside_nav > ul > li.on > button {font-weight:700;}
 .aside .aside_nav > ul > li.on > button::after {background-image:url(../images/layout/ico_m.png);}
 .aside .aside_nav > ul > li > .sub_menu {display:none;}
 .aside .aside_nav .sub_menu ul {padding:0.2rem 0.8rem;}
 .aside .aside_nav .sub_menu a {padding:1rem 0; font-size:1.5rem; line-height:2.2rem; color:#717171;}
+.aside .aside_nav .sub_menu li.on a{font-weight:700; color:#fc6969;}
 .aside .aside_nav .sub_menu a sup {display:inline-block; margin-top:-0.5rem;}
 .aside .aside_nav .sub_menu a.img_delivery {height:4.2rem; background:url(../images/layout/menu_delivery.png) no-repeat left center / auto 1.6rem;}
 
