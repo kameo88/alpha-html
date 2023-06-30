@@ -767,6 +767,9 @@ const cardSwiper = function(){
                 },
                 on: {
                     slideChange	:function(a){
+
+                        if( $(a.$el).hasClass("ty04") ) return;
+
                         const wrapW = a.width;
 
                         const swiperW = a.virtualSize;
