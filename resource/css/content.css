@@ -242,7 +242,7 @@
 
 
 /* ** 비교하기 플로팅 ** */
-.compare_pop {max-width:64rem; margin:0 auto; border-radius:1.6rem 1.6rem 0 0; overflow:hidden;}
+.compare_pop {max-width:64rem; margin:0 auto; border-radius:1.6rem 1.6rem 0 0; box-shadow:0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.16); overflow:hidden;}
 .compare_pop .comp_hea {position:relative; display:block; width:100%; padding:0.85rem 0; background:#000; font-size:1.6rem; font-weight:700; line-height:2.3rem; color:#fff; text-align:center;}
 .compare_pop .comp_hea span {position:relative; display:inline-block; padding-right:3.2rem;}
 .compare_pop .comp_hea span::after {content:''; position:absolute; top:50%; right:0; display:block; width:2.4rem; height:2.4rem; margin-top:-1.2rem; background:url(../images/ico/ico_arrowB02.png) no-repeat center / 100% auto; transform:rotate(180deg);}

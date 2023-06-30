@@ -746,19 +746,20 @@ var popUp = {
 const cardSwiper = function(){
     // console.log('cardSwiper');
 
-    var swiper = new Swiper(".cardSwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 12,
-        grabCursor: true,
-        observer: true,
-        observeParents: true,
-    });
+    // var swiper = new Swiper(".cardSwiper", {
+    //     slidesPerView: "auto",
+    //     spaceBetween: 12,
+    //     grabCursor: true,
+    //     observer: true,
+    //     observeParents: true,
+    // });
 
     function cardLength(){
-        if($('html').hasClass("pc") == true){
+        // if($('html').hasClass("pc") == true){
             var swiper = new Swiper(".cardSwiper", {
                 slidesPerView: "auto",
                 spaceBetween: 12,
+                grabCursor: true,
                 observer: true,
                 observeParents: true,
                 navigation: {
@@ -768,7 +769,7 @@ const cardSwiper = function(){
                 on: {
                     slideChange	:function(a){
 
-                        if( $(a.$el).hasClass("ty04") ) return;
+                        if( $(a.$el).hasClass("ty04") || !$('html').hasClass("pc") ) return;
 
                         const wrapW = a.width;
 
@@ -786,7 +787,15 @@ const cardSwiper = function(){
                 }
             });
             
-        }
+        // } else {
+        //     var swiper = new Swiper(".cardSwiper", {
+        //         slidesPerView: "auto",
+        //         spaceBetween: 12,
+        //         grabCursor: true,
+        //         observer: true,
+        //         observeParents: true,
+        //     });
+        // }
     }
     
     cardLength();
