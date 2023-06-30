@@ -761,7 +761,8 @@
 .cardSwiper .guid_img_item {padding:2.7rem 2rem;}
 .cardSwiper .guid_img_item .guid_img {max-width:16rem;}
 .cardSwiper.ty04 {padding: 1.2rem 2rem 1.8rem; margin:0 -2rem;}
-.cardSwiper.ty04 .swiper-slide {max-width:28rem;}
+
+.pc .cardSwiper.ty04 .swiper-slide {/*max-width:28rem;*/ max-width:calc(50% - 0.6rem); }
 .cardSwiper.ty04 ~ strong{display:block; margin-top:1.4rem;}
 .cardSwiper.ty04 .card_swiper_control .swiper-button-next,
 .cardSwiper.ty04 .card_swiper_control .swiper-button-prev {background:none;}
