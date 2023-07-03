@@ -537,9 +537,10 @@
 
 .thum_item.insta_thum .thum_img {padding-bottom:100%;}
 .thum_item.insta_thum .thum_con {padding:1.2rem 2rem}
-/* .thum_item.insta_thum .sns_post {display:initial;}
-.thum_item.insta_thum .sns_post > li:not(:first-child){margin-top:0.4rem;}
-.thum_item.insta_thum .sns_post > li::before{content:none;} */
+
+.cardSwiper .thum_item.insta_thum .sns_post {display:initial;}
+.cardSwiper .thum_item.insta_thum .sns_post > li:not(:first-child){margin-top:0.4rem;}
+.cardSwiper .thum_item.insta_thum .sns_post > li::before{content:none;}
 
 .thum_item.no_border {height:100%; border:none;}
 .thum_item.no_border .thum_con > strong{font-size:1.2rem; line-height:1.8rem; font-weight:500;}
