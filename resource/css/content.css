@@ -970,8 +970,8 @@
 .pc .cont_ratePlan .title_nav .share_btn {font-weight:500;}
 
 .pc .crp_wrap {display:flex; padding:1.2rem 1.6rem 0;}
-.pc .crp_wrap .crp_l {width:28.8rem; margin-right:3.2rem;}
-.pc .crp_wrap .crp_r {flex:1;}
+.pc .crp_wrap .crp_l {/*flex:1 1 28.8rem;*/ max-width:28.8rem; margin-right:3.2rem;}
+.pc .crp_wrap .crp_r {/*flex:1 1 60.8rem;*/ max-width:60.8rem;}
 
 .pc .crp_wrap .section {padding-left:0; padding-right:0;}
 
