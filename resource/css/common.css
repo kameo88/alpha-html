@@ -313,6 +313,16 @@ input[type="number"] {appearance:textfield; -moz-appearance:textfield;}
 .footer > .inner .f_sns a.ico_youtube {background-image:url(../images/layout/ico_youtube.png);}
 .footer > .inner .f_sns a.ico_instagram {background-image:url(../images/layout/ico_instagram.png);}
 
+/* footer contents */
+.tit_terms {font-size:1.3rem; font-weight:normal;}
+.list_terms {margin-top:2rem; font-size:1.3rem;}
+.list_terms li:not(:first-child) {margin-top:2rem;}
+.box_gray.terms {margin-bottom:3.2rem; padding:3.2rem; font-size:1.3rem;}
+.list.decimal li {list-style-type:decimal;}
+.list.decimal li:not(:first-child) {margin-top:2rem;}
+
+/* .text_list_bull > li {padding-left:1.1rem; color:#717171; font-size:1.2rem; line-height:1.8rem;}
+.text_list_bull > li::before {content:''; position:absolute; top:0.7rem; left:0; width:0.3rem; height:0.3rem; border-radius:50%; background:#ccc;} */
 
 /* *** pop layer *** */
 .pop_layer {visibility:hidden; position:fixed; right:0; bottom:0; left:0; display:flex; justify-content:center; height:0; z-index:100;}
