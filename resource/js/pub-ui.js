@@ -65,10 +65,6 @@ var pubUi = {
             }
         });
 
-        
-        pubUi.getFullH();
-        $(window).on("resize", pubUi.getFullH);
-
         pubUi.select();
         pubUi.sortLayer();
         pubUi.tooltip();
@@ -82,13 +78,6 @@ var pubUi = {
         acdItem.init();
         scrollFixed.init();
         
-    },
-    getFullH : function(){
-        const fullH = $(document).find(".fullH");
-        if( fullH.length < 1 ) return;
-
-        const docH = $(window).height();
-        $(document).find(".fullH").css({"min-height": `${docH}px`});
     },
     select : function(){
         $(document).on('click', '.select_list button, .select_list02 button', function(){
