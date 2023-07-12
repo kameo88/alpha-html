@@ -17,20 +17,33 @@
 <body>
 
 <div class="wrap">
-    
+
     <header class="header">
         <div class="inner">
             <div class="h_left">
-                <!-- <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button> -->
-                <h2 class="h_title">안내</h2>
+                <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
+                <h2 class="h_title">공통</h2>
             </div>
             <div class="h_right">
-                <button type="button" class="h_close"><span class="blind">닫기</span></button>
+                
             </div>
         </div>
     </header>
 
     <div class="container">
+        <div class="content" id="content">
+            <h2 class="title_nav">공통</h2>
+            
+            <div class="section">
+                <div class="group_btn">
+                    <button type="button" class="btn_sM_c03" id="btn_inspectionPopup01" onclick="popUp.open('#inspectionPopup01', '#btn_inspectionPopup01');">서비스 점검중 (팝업)</button>
+                </div>
+            </div> <!-- // section -->
+
+        </div> <!-- // content -->
+    </div> <!-- // container -->
+
+    <!-- <div class="container">
         <div class="content" id="content">
             <h2 class="title_nav blind">서비스 점검중</h2>
 
@@ -61,11 +74,54 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- // bottom_float -->
+            </div>
 
-        </div> <!-- // content -->
-    </div> <!-- // container -->
+        </div>
+    </div> -->
+    <!-- // container -->
 
 </div> <!-- // wrap -->
+
+
+<div class="pop_layer full" id="inspectionPopup01">
+    <div class="pop_wrap">
+        <div class="pop_header">
+            <h3>안내</h3>
+        </div>
+        <div class="pop_content">
+            <div class="section error_area ty02">
+                <div class="ttl">
+                    <h2>지금은<br>시스템 점검중입니다</h2>
+                    <p>
+                        다 나은 서비스 제공을 위해<br>
+                        서비스 점검 작업을 진행하고 있습니다.<br>
+                        이용에 불편을 드려 죄송합니다.<br>
+                        빠른 시간 내에 정상적인 서비스가 가능하도록<br>
+                        최선을 다하겠습니다.<br><br>
+
+                        감사합니다.
+                    </p>
+                    <div class="error_time">
+                        <strong>점검시간</strong>
+                        <span>1월25일 00:00 ~ 1월 25일 04:00</span>
+                    </div>
+                </div>
+            </div> <!-- // section -->
+        </div>
+        <div class="pop_footer">
+            <div class="group_btn">
+                <button type="button" class="btn_sL_c01" data-action="close">이전 화면으로 돌아가기</button>
+            </div>
+        </div>
+        <button type="button" class="pop_close" data-action="close"><span class="blind">팝업 닫기</span></button>
+    </div>
+</div> <!-- // pop_layer -->
+
+<script>
+    $(function(){
+        popUp.open('#inspectionPopup01', '#btn_inspectionPopup01');
+    });
+</script>
+
 </body>
 </html>
