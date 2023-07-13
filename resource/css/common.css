@@ -449,9 +449,7 @@ ol.list.decimal li {list-style:decimal; list-style-position:inside; margin-top:2
 .pc ol.list.decimal li {width:calc(50% - 1.5rem);}
 .pc .terms .list .link {text-decoration:none;}
 .pc .terms .list .link:hover {text-decoration:underline;}
-.pc .terms_wrap .info_files {display:flex;}
-.pc .terms_wrap .info_files .box_gray {width:24.3rem; margin-top:0;}
-.pc .terms_wrap .info_files .box_gray + .box_gray {margin-left:1.2rem;}
-.pc .info_pdf .box_gray {width:49.8rem;}
+.pc .terms_wrap .info_files {display:flex; justify-content:space-between;}
+.pc .terms_wrap .info_files .box_gray {width:calc(50% - .6rem); margin-top:0;}
 .pc .form_list.version .form_item {justify-content:end;}
 .pc .form_list.version .select_btn {flex:none; width:30rem;}
