@@ -154,8 +154,8 @@ var pubUi = {
     }, // sortLayer
     asideNav : function(){
         $(document).on('click', '.header .h_menu', function(){
-            // $('.aside').prepend('<div class="asd_s" tabindex="0"></div>');
-            // $('.aside').append('<div class="asd_e" tabindex="0"></div>');
+            $('.aside').prepend('<div class="asd_s" tabindex="0"></div>');
+            $('.aside').append('<div class="asd_e" tabindex="0"></div>');
             $('.aside').find('> .inner').attr('tabindex', '0');
             
             $('.aside').addClass('open');
