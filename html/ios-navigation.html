@@ -94,6 +94,15 @@
 </div> <!-- // wrap -->
 
 </body>
+<script>
+document.addEventListener('scroll', () => {
+  const active = document.activeElement;
+  if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+    active.blur(); // 키보드 닫기
+  }
+}, { passive: true });
 
+</script>
 </html>
+
 
