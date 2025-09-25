@@ -84,7 +84,7 @@
         <button type="button" class="del_btn" style="display: none;"><span class="blind">입력 내용 삭제</span></button>
     </div>
   <div class="btn_fixed">
-    <button type="button" class="btn">고정버튼</button>
+    <button type="button" class="btn">고정버튼 1</button>
   </div>
                 
             </div> <!-- // section -->
@@ -95,14 +95,24 @@
 
 </body>
 <script>
-document.addEventListener('scroll', () => {
-  const active = document.activeElement;
-  if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
-    active.blur(); // 키보드 닫기
+let startY = 0;
+
+document.addEventListener('touchstart', (e) => {
+  startY = e.touches[0].clientY;
+});
+
+document.addEventListener('touchmove', (e) => {
+  const diffY = Math.abs(e.touches[0].clientY - startY);
+  if (diffY > 10) { // 스크롤로 판단할 정도의 이동량
+    const active = document.activeElement;
+    if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+      active.blur();
+    }
   }
-}, { passive: true });
+});
 
 </script>
 </html>
+
 
 
