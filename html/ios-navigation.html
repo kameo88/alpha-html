@@ -7,13 +7,20 @@
     <link rel="shortcut icon" href="../../resource/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../resource/images/apple-touch-icon.png">
     <title>+알파</title>
-    <link rel="stylesheet" href="resource/css/style.css">
-    <script src="resource/js/jquery-3.6.0.min.js"></script>
-    <script src="resource/js/jquery-ui-1.12.1.min.js"></script>
-    <script src="resource/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="resource/js/swiper-bundle.min.js"></script>
-    <script src="resource/js/pub-ui.js"></script>
-
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <script src="../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../resource/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../resource/js/swiper-bundle.min.js"></script>
+    <script src="../resource/js/pub-ui.js"></script>
+  <style>
+  .btn_fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  </style>
 </head>
 <body>
 
@@ -21,7 +28,7 @@
     <header class="header">
         <div class="inner">
             <div class="h_left">
-                <a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a>
+                <!-- a href="javascript:void(0);" class="h_home"><span class="blind">+알파</span></a -->
                 <button type="button" class="h_back"><span class="blind">이전 화면으로 이동</span></button>
                 <h2 class="h_title">header</h2>
             </div>
@@ -41,7 +48,9 @@
 
             <div class="section">
                 
-              하단 fixed  button test
+                  <div class="btn_fixed">
+                    <button type="button" class="btn">고정버튼</button>
+                  </div>
                 
             </div> <!-- // section -->
         </div> <!-- // content -->
@@ -50,4 +59,5 @@
 </div> <!-- // wrap -->
 
 </body>
+
 </html>
